@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="8844a16a-0d58-408f-98e3-122ceaae2f92">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПорядокРасчетов" category="Ref">
+				<xr:TypeId>8f240536-04c3-464e-8583-7740289aaa7b</xr:TypeId>
+				<xr:ValueId>f8d091fa-574f-4189-91f5-f3ce3c0cf3bc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПорядокРасчетов" category="Manager">
+				<xr:TypeId>e662c20b-c926-456e-9dec-7f0657673514</xr:TypeId>
+				<xr:ValueId>f69f1d2d-bf4a-4c8b-a33d-92a1494415f9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПорядокРасчетов" category="List">
+				<xr:TypeId>1f4beb9d-f47f-4a07-b851-f11dff518cd0</xr:TypeId>
+				<xr:ValueId>113ab3e2-639f-4948-a661-77b03cf234c8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПорядокРасчетов</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="44fab0b5-84a4-447c-a6ee-2c068fded139">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПоДоговорамКонтрагентов</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d0571233-f2ec-4887-a223-13f032b2e5f3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПоНакладным</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e8334c7f-2349-4466-98ab-fe4a0601404d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПоЗаказамНакладным</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="be714b10-3908-4340-8fcc-3204c9e7449c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПоЗаказам</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>27ca6d68-e67a-4889-9637-02a127ea6bb7</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="de71b92b-34fd-4d79-a31b-7377a3e61b56">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПоДоговорамНакладным</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4f954f84-d9f9-4d34-8b96-cd90db36a2c4</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

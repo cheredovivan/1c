@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Constant uuid="1e435c76-51d0-4724-9596-2198d5cfde9f">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ПоддержкаБанковскогоИКазначейскогоСопровожденияГосконтрактов" category="Manager">
+				<xr:TypeId>fd059623-9664-407d-8d4c-f067ea6930b4</xr:TypeId>
+				<xr:ValueId>71d66f90-8bbd-4cd8-adf9-487172c0b0a7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ПоддержкаБанковскогоИКазначейскогоСопровожденияГосконтрактов" category="ValueManager">
+				<xr:TypeId>51b2cdf2-99bb-47a1-9af3-87cf7908b1e6</xr:TypeId>
+				<xr:ValueId>550c2925-c076-48ba-9e67-95d7d4ef225c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ПоддержкаБанковскогоИКазначейскогоСопровожденияГосконтрактов" category="ValueKey">
+				<xr:TypeId>2bd5bf58-1dd4-4ed8-b12c-1bf3c96ee259</xr:TypeId>
+				<xr:ValueId>83448c90-3fb4-45b8-9dff-5cd98d3ab881</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПоддержкаБанковскогоИКазначейскогоСопровожденияГосконтрактов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3720e805-df4b-46c5-b4d5-64b9db9b132e</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="802ae30f-c80e-4fe1-8d75-a562f8dbcc99">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПроизводствоБезЗаказа" category="Object">
+				<xr:TypeId>2ff555f5-2f8b-4abe-add7-470ab65dd5a6</xr:TypeId>
+				<xr:ValueId>bcb28e65-1586-4bb0-8c15-bd4fb37a6884</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПроизводствоБезЗаказа" category="Ref">
+				<xr:TypeId>4da50715-af5e-4f34-81cf-3c660f0a349d</xr:TypeId>
+				<xr:ValueId>b19e0998-ec05-40c4-b589-f796ba8e7a42</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПроизводствоБезЗаказа" category="Selection">
+				<xr:TypeId>1165e87b-d87c-4602-a094-fd80209ffc6c</xr:TypeId>
+				<xr:ValueId>7b446862-ef74-48af-84c5-af4410290b23</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПроизводствоБезЗаказа" category="List">
+				<xr:TypeId>8979473e-48ba-447b-aa5d-f5bf75dc87bf</xr:TypeId>
+				<xr:ValueId>1d09512e-2691-4c76-b091-05df6b60e0f2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПроизводствоБезЗаказа" category="Manager">
+				<xr:TypeId>fd3fb719-5f5b-472b-904b-8e70f3cdf901</xr:TypeId>
+				<xr:ValueId>88d45f4c-d4a5-4d80-96ac-a197b229bde7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПроизводствоБезЗаказа</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>402a4f63-c632-4b91-9a24-a8b41c330ff0</ExtendedConfigurationObject>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.А1_МатСоставИзделий_Расш1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.А1_МатСоставИзделийПоПериодам</xr:Item>
+			</RegisterRecords>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="51ac96a4-588d-4bb5-93c4-2ffae139bc7d">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПроизводствоБезЗаказа.МатериалыИРаботы" category="TabularSection">
+						<xr:TypeId>19b10b30-119b-43cd-b76b-2543c0c29184</xr:TypeId>
+						<xr:ValueId>7affe57c-8b30-4cae-a888-314d5d7fe37c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПроизводствоБезЗаказа.МатериалыИРаботы" category="TabularSectionRow">
+						<xr:TypeId>11543158-a325-4f38-9add-c84cd8d6e3f4</xr:TypeId>
+						<xr:ValueId>f293aaee-d833-49cf-865f-dc3f4386cd63</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МатериалыИРаботы</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9c018d82-1947-4ce8-87fb-d0203e254132</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

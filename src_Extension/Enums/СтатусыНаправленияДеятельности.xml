@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="90d88188-66f9-4fb8-a04b-effaae642495">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыНаправленияДеятельности" category="Ref">
+				<xr:TypeId>6070a419-4a6b-44da-9ad1-d2ba91a1ef59</xr:TypeId>
+				<xr:ValueId>b1c4118b-cff6-45a3-8e0f-8d1a28773e46</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыНаправленияДеятельности" category="Manager">
+				<xr:TypeId>0d1a1952-d2ce-4672-a538-f0786c7d5518</xr:TypeId>
+				<xr:ValueId>a679ede0-c656-41fc-8ef3-adc3b3b52c25</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыНаправленияДеятельности" category="List">
+				<xr:TypeId>dcbd9ed7-d443-46fd-93fa-873752b8033e</xr:TypeId>
+				<xr:ValueId>6e06fd1e-272f-45f3-9334-eb0cd5f5146e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыНаправленияДеятельности</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

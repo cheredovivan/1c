@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ОК" id="323">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="324"/>
+			</Button>
+			<Button name="Отмена" id="325">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="326"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСсылкаИзСсылкаНа" id="348">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа Ссылка из Ссылка на</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСсылкаИзСсылкаНаРасширеннаяПодсказка" id="349"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСсылкаИз" id="350">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа Ссылка из</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСсылкаИзРасширеннаяПодсказка" id="351"/>
+					<ChildItems>
+						<UsualGroup name="ЗаголовокСсылкаИз" id="363">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок ссылка из</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЗаголовокСсылкаИзРасширеннаяПодсказка" id="364"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаголовокСсылкаИз" id="352">
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылка из (объект 1С:Документооборота)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗаголовокСсылкаИзКонтекстноеМеню" id="353"/>
+									<ExtendedTooltip name="ДекорацияЗаголовокСсылкаИзРасширеннаяПодсказка" id="354"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОтступСсылкаИз" id="360">
+									<Height>1</Height>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ДекорацияОтступСсылкаИзКонтекстноеМеню" id="361"/>
+									<ExtendedTooltip name="ДекорацияОтступСсылкаИзРасширеннаяПодсказка" id="362"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СсылкаИз" id="225">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>30</Width>
+							<Height>3</Height>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<DataPath>СсылкаИз</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СсылкаИзКонтекстноеМеню" id="227"/>
+							<AutoCommandBar name="СсылкаИзКоманднаяПанель" id="226"/>
+							<ExtendedTooltip name="СсылкаИзРасширеннаяПодсказка" id="228"/>
+							<SearchStringAddition name="СсылкаИзСтрокаПоиска" id="229">
+								<AdditionSource>
+									<Item>СсылкаИз</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкаИзСтрокаПоискаКонтекстноеМеню" id="230"/>
+								<ExtendedTooltip name="СсылкаИзСтрокаПоискаРасширеннаяПодсказка" id="231"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СсылкаИзСостояниеПросмотра" id="235">
+								<AdditionSource>
+									<Item>СсылкаИз</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкаИзСостояниеПросмотраКонтекстноеМеню" id="236"/>
+								<ExtendedTooltip name="СсылкаИзСостояниеПросмотраРасширеннаяПодсказка" id="237"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СсылкаИзУправлениеПоиском" id="232">
+								<AdditionSource>
+									<Item>СсылкаИз</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкаИзУправлениеПоискомКонтекстноеМеню" id="233"/>
+								<ExtendedTooltip name="СсылкаИзУправлениеПоискомРасширеннаяПодсказка" id="234"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СсылкаИзСсылкаИзПредставление" id="312">
+									<DataPath>СсылкаИз.СсылкаИзПредставление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылка из (объект 1С:Документооборота)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СсылкаИзСсылкаИзПредставлениеКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="СсылкаИзСсылкаИзПредставлениеРасширеннаяПодсказка" id="314"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСсылкаНа" id="340">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа Ссылка на</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСсылкаНаРасширеннаяПодсказка" id="341"/>
+					<ChildItems>
+						<UsualGroup name="ЗаголовокСсылкаНа" id="358">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок ссылка на</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЗаголовокСсылкаНаРасширеннаяПодсказка" id="359"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаголовокСсылкаНа" id="355">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>1</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылка на (создается из значения реквизита по правилу интеграции)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗаголовокСсылкаНаКонтекстноеМеню" id="356"/>
+									<ExtendedTooltip name="ДекорацияЗаголовокСсылкаНаРасширеннаяПодсказка" id="357"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияОтступСсылкаНа" id="365">
+									<Height>1</Height>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ДекорацияОтступСсылкаНаКонтекстноеМеню" id="366"/>
+									<ExtendedTooltip name="ДекорацияОтступСсылкаНаРасширеннаяПодсказка" id="367"/>
+								</LabelDecoration>
+								<Button name="СоздатьПравилоИнтеграции" id="329">
+									<Type>Hyperlink</Type>
+									<Height>1</Height>
+									<CommandName>Form.Command.СоздатьПравилоИнтеграции</CommandName>
+									<ExtendedTooltip name="СоздатьПравилоИнтеграцииРасширеннаяПодсказка" id="330"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СсылкаНа" id="164">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>50</Width>
+							<Height>3</Height>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<DataPath>СсылкаНа</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбранный тип связи</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СсылкаНаКонтекстноеМеню" id="166"/>
+							<AutoCommandBar name="СсылкаНаКоманднаяПанель" id="165"/>
+							<ExtendedTooltip name="СсылкаНаРасширеннаяПодсказка" id="167"/>
+							<SearchStringAddition name="СсылкаНаСтрокаПоиска" id="168">
+								<AdditionSource>
+									<Item>СсылкаНа</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкаНаСтрокаПоискаКонтекстноеМеню" id="169"/>
+								<ExtendedTooltip name="СсылкаНаСтрокаПоискаРасширеннаяПодсказка" id="170"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СсылкаНаСостояниеПросмотра" id="174">
+								<AdditionSource>
+									<Item>СсылкаНа</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкаНаСостояниеПросмотраКонтекстноеМеню" id="175"/>
+								<ExtendedTooltip name="СсылкаНаСостояниеПросмотраРасширеннаяПодсказка" id="176"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СсылкаНаУправлениеПоиском" id="171">
+								<AdditionSource>
+									<Item>СсылкаНа</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкаНаУправлениеПоискомКонтекстноеМеню" id="172"/>
+								<ExtendedTooltip name="СсылкаНаУправлениеПоискомРасширеннаяПодсказка" id="173"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СсылкаНаПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СсылкаНаСсылкаНаПредставление" id="309">
+									<DataPath>СсылкаНа.СсылкаНаПредставление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылка на (создается из значения реквизита по правилу интеграции)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СсылкаНаСсылкаНаПредставлениеКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="СсылкаНаСсылкаНаПредставлениеРасширеннаяПодсказка" id="311"/>
+								</InputField>
+								<InputField name="СсылкаНаТипСвязи" id="368">
+									<DataPath>СсылкаНа.ТипСвязи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СсылкаНаТипСвязиКонтекстноеМеню" id="369"/>
+									<ExtendedTooltip name="СсылкаНаТипСвязиРасширеннаяПодсказка" id="370"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТипыСвязей" id="287">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТипыСвязей</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТипыСвязейКонтекстноеМеню" id="288"/>
+			<AutoCommandBar name="ТипыСвязейКоманднаяПанель" id="289">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СоздатьНастройкуСвязей" id="327">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьНастройкуСвязи</CommandName>
+						<ExtendedTooltip name="СоздатьНастройкуСвязейРасширеннаяПодсказка" id="328"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТипыСвязейРасширеннаяПодсказка" id="290"/>
+			<SearchStringAddition name="ТипыСвязейСтрокаПоиска" id="291">
+				<AdditionSource>
+					<Item>ТипыСвязей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТипыСвязейСтрокаПоискаКонтекстноеМеню" id="292"/>
+				<ExtendedTooltip name="ТипыСвязейСтрокаПоискаРасширеннаяПодсказка" id="293"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТипыСвязейСостояниеПросмотра" id="294">
+				<AdditionSource>
+					<Item>ТипыСвязей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТипыСвязейСостояниеПросмотраКонтекстноеМеню" id="295"/>
+				<ExtendedTooltip name="ТипыСвязейСостояниеПросмотраРасширеннаяПодсказка" id="296"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТипыСвязейУправлениеПоиском" id="297">
+				<AdditionSource>
+					<Item>ТипыСвязей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТипыСвязейУправлениеПоискомКонтекстноеМеню" id="298"/>
+				<ExtendedTooltip name="ТипыСвязейУправлениеПоискомРасширеннаяПодсказка" id="299"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТипыСвязейВыбор</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="ГруппаСоздаватьСвязьТипСвязи" id="315">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа создавать связь тип связи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа создавать связь тип связи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСоздаватьСвязьТипСвязиРасширеннаяПодсказка" id="316"/>
+					<ChildItems>
+						<CheckBoxField name="ТипыСвязейСоздаватьСвязь" id="306">
+							<DataPath>ТипыСвязей.СоздаватьСвязь</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТипыСвязейСоздаватьСвязьКонтекстноеМеню" id="307"/>
+							<ExtendedTooltip name="ТипыСвязейСоздаватьСвязьРасширеннаяПодсказка" id="308"/>
+							<Events>
+								<Event name="OnChange">ТипыСвязейСоздаватьСвязьПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ТипыСвязейТипСвязи" id="300">
+							<DataPath>ТипыСвязей.ТипСвязи</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипыСвязейТипСвязиКонтекстноеМеню" id="301"/>
+							<ExtendedTooltip name="ТипыСвязейТипСвязиРасширеннаяПодсказка" id="302"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ТипыСвязейКомментарий" id="303">
+					<DataPath>ТипыСвязей.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипыСвязейКомментарийКонтекстноеМеню" id="304"/>
+					<ExtendedTooltip name="ТипыСвязейКомментарийРасширеннаяПодсказка" id="305"/>
+					<Events>
+						<Event name="OnChange">ТипыСвязейКомментарийПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СсылкаИз" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка из</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТипОбъектаДО" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип объекта ДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДокументаДО" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа ДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыДокументов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаИзПредставление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка из представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СсылкаНа" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТипОбъектаДО" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип объекта ДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипСвязи" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыСвязей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидДокументаДО" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа ДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыДокументов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаНаПредставление" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипыСвязей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы связей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТипСвязи" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыСвязей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СоздаватьСвязь" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создавать связь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИнтегрированнаяСистема" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интегрированная система</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExchangePlanRef.ИнтегрированныеСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипыОбъектаИС" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы объекта ИС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВсеКомментарии" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все комментарии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТипОбъектаДО" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип объекта ДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДокументаДО" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа ДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыДокументов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипСвязи" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТипыСвязей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СсылкаНаТипСвязи</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СсылкаНа.ТипСвязи</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:ВажнаяНадписьШрифт" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СсылкаНаТипСвязи</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СсылкаНа.ТипСвязи</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветТекстаПодсказкиВвода</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип связи не выбран</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТипыСвязейТипСвязи</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТипыСвязей.СоздаватьСвязь</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:ВажнаяНадписьШрифт" kind="StyleItem"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="СоздатьНастройкуСвязи" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать настройку связи</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьНастройкуСвязи</Action>
+		</Command>
+		<Command name="СоздатьПравилоИнтеграции" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать правило интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьПравилоИнтеграции</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТипыОбъектаИС">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ИнтегрированнаяСистема">
+			<Type>
+				<v8:Type>cfg:ExchangePlanRef.ИнтегрированныеСистемы</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПредставлениеРеквизитаОбъектаИС">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ТипОбъектаДО">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СуществующиеСвязи">
+			<Type/>
+		</Parameter>
+		<Parameter name="ВидДокумента">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыДокументов</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПредставлениеОбъектаДО">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

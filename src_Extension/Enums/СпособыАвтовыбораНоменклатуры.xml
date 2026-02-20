@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="556d02e9-3c4a-45f5-8514-02f012b5f260">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыАвтовыбораНоменклатуры" category="Ref">
+				<xr:TypeId>fa6751ad-c9c1-4678-99ff-91929a05fca1</xr:TypeId>
+				<xr:ValueId>d6efdb39-6a1b-4347-98c2-8faded809310</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыАвтовыбораНоменклатуры" category="Manager">
+				<xr:TypeId>b867a38e-23c5-4e82-aa8e-441ee1c641d3</xr:TypeId>
+				<xr:ValueId>7219fc41-78eb-4382-b036-440d9ca3862f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыАвтовыбораНоменклатуры" category="List">
+				<xr:TypeId>af1d212f-7dcc-4689-acb6-1e139f7a9d55</xr:TypeId>
+				<xr:ValueId>8f6abbac-20dc-42ff-9ef8-b265abd8a997</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СпособыАвтовыбораНоменклатуры</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

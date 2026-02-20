@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DefinedType uuid="5e02aa60-0435-49f5-a83c-e2cba4dbf610">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.ПредметЗаданияОчередиДокументооборота" category="DefinedType">
+				<xr:TypeId>726fdc4d-8cb4-4e9a-95bd-a5a84abac499</xr:TypeId>
+				<xr:ValueId>fcfbdd83-27cb-4970-8a52-5ea80f0113f8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПредметЗаданияОчередиДокументооборота</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предмет задания очереди документооборота</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДействияОзнакомления</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.РешениеВопросовВыполненияЗадач</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Исполнение</v8:Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЗамещающиеИПомощники</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДействияСогласования</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДействияРегистрации</v8:Type>
+				<v8:Type>cfg:TaskRef.ЗадачаИсполнителя</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Приглашение</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДействияПодписания</v8:Type>
+				<v8:Type>cfg:CatalogRef.РабочиеГруппы</v8:Type>
+				<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДействияУтверждения</v8:Type>
+				<v8:Type>cfg:CatalogRef.ШаблоныДвухфакторнойАутентификации</v8:Type>
+				<v8:Type>cfg:DocumentRef.Задача</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПроектыКонтейнеры</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Утверждение</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДокументыПредприятия</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДействияИсполнения</v8:Type>
+				<v8:Type>cfg:DocumentRef.ДействиеЗадачи</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.КомплексныйПроцесс</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПолныеРоли</v8:Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПодразделенияКонтейнеры</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Подписание</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Рассмотрение</v8:Type>
+				<v8:Type>cfg:CatalogRef.ОбработкиОбъектов</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Согласование</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Ознакомление</v8:Type>
+				<v8:Type>cfg:BusinessProcessRef.Регистрация</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>

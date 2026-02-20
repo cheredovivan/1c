@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="5934862c-dace-4744-9520-3fe4d6f2abcc">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПоступлениеОтПереработчика" category="Object">
+				<xr:TypeId>50cd8aa7-d461-4d0c-890a-f5071e07bf24</xr:TypeId>
+				<xr:ValueId>a04c2c52-03e3-4557-bdb0-5ca3b66188b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПоступлениеОтПереработчика" category="Ref">
+				<xr:TypeId>7a313625-d2d6-41a8-95ce-128c7920709e</xr:TypeId>
+				<xr:ValueId>bbf08548-46c7-4df3-9967-ef0943706d6d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПоступлениеОтПереработчика" category="Selection">
+				<xr:TypeId>00984836-783b-452d-aa9f-7b481f2d02ef</xr:TypeId>
+				<xr:ValueId>8397fee3-08e7-495d-8fbb-4fe1a47ef583</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПоступлениеОтПереработчика" category="List">
+				<xr:TypeId>6ddb58b8-e1c2-49a6-871e-898e612ae2e7</xr:TypeId>
+				<xr:ValueId>b6476131-d2a5-4416-b9d4-8ceb2904193d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПоступлениеОтПереработчика" category="Manager">
+				<xr:TypeId>333fd9c0-5638-4162-bcd7-1090b61e2f6d</xr:TypeId>
+				<xr:ValueId>de9bf00b-9984-4582-961f-915dd941fdd0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПоступлениеОтПереработчика</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3a1d9a59-b4c6-4fb7-a1ef-7ea9c612d762</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

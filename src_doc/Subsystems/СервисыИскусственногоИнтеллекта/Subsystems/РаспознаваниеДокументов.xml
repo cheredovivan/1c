@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="851de153-9d9e-47ec-986e-976ba28b3c39">
+		<Properties>
+			<Name>РаспознаваниеДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распознавание документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовHTTPПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовSDK</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовSDKПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовSDKПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовКоннекторСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовНечеткийПоискСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовСериализацияСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.РаспознаваниеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПроверкаРаспознанныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.РаспознаваемыеРеквизитыДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыРаспознаванияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыФормализованныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВерификацияРеквизитовРаспознанныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВерификацияРеквизитовТЧРаспознанныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыРаспознаванияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствиеВидовРаспознаваемыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияРаспознаваемыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ФайлыДокументовНаРаспознавании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиЗаполненияКарточекДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИмпортФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.МакетОтображенияКартинкиДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаспознанныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаспознанныеДанныеТаблиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СписокВыбораРеквизитовРаспознаваниеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СписокВыбораТабличныхЧастейРаспознаваниеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовСлужебныйВызовСервераПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаспознаваниеДокументовСлужебныйКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СообщениеПриОтправкеДокументаНаРаспознавание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗаполнениеКарточекДокументов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

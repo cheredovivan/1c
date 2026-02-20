@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="ddfa9343-5ffd-4020-b834-1ffed1d031b3">
+		<Properties>
+			<Name>СтандартныеПодсистемыДокументооборота</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стандартные подсистемы документооборота</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПапкиПоиска</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныТекстов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбслуживаниеИтогов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МультиязычностьДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкаПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВидыДокументовКлиентЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВидыДокументовКлиентСерверЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВидыДокументовЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДелопроизводствоЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДокументыПредприятияКлиентЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДокументыПредприятияКлиентСерверЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДокументыПредприятияЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтрагентыКлиентЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КонтрагентыЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиПрограммыКлиентЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЛокализацияКонфигурацииПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЛокализацияКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЛокализацияКонфигурацииПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиПрограммыЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыДокументооборотЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОрганизацииКлиентЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОрганизацииЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКлиентСерверЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКОРПЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСАнализомТекстаЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СозданиеДокументаПоШаблонуЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодульПриложенияКлиентЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КэшиНаВремяВызова</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КэшиНаВремяВызоваПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СведенияОбИнформационнойБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияКлиентПереопределяемыйЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотКлиентГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДокументооборотПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВерсионированиеОбъектовДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВидыДокументовКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыДокументооборотАрхив</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСДублямиЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеКонтактнойИнформациейДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеПечатьюВызовСервераДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеПечатьюКлиентДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеСвойствамиДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиДокументооборотПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Автообновление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.АвтообновлениеВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.АвтообновлениеКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВзаимодействиеСЭДСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСШаблонамиТекстовСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СохранениеВводимыхЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СохранениеВводимыхЗначенийКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОбъектПомеченНаУдаление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.УдаленныйОбъектЦвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.УдаленныйОбъектШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПросмотраСпискаОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РазделыОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВводСтрокиСЗаголовком</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВопросПриЗавершенииРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Подсказка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Сообщение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РасширенныйВопрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаАвтообновления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СписокЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаТиповыхИнструкций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПеренумерацияОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ВариантОтчетаПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УдалитьЗапрещатьВходВПрограммуБезПароля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыполнениеДлительнойОперации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.Основной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветГиперссылки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОшибочныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.НедоступныеДанныеЦвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ИнформационнаяНадпись</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЗакрытыеНеактуальныеЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.БуферОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВертикальнаяПолоса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействиеСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействиеСотрудников24</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействиеСотрудниковЗеленый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействиеСотрудниковНеактивна24</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВзаимодействиеСотрудниковСерый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ГаечныйКлюч</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДобавитьВОтчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗаполнитьПоОснованию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗеленыйШар</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИконкаБелыйФонРаботаСНоменклатурой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИконкаКрасныйФонРаботаСНоменклатурой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИнформацияНовости16Анимированная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Меню</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Метаданные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Минус</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОбменСКонтрагентами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Переключатель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПечФормыОтчетыИОбработки48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Плюс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Плюс64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПустоеЗначение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделГлавное16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделАдминистрированиеФреш16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СкрепкаСерая</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ТекстНевыбраннойКартинкиЦвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтВажныхКнопок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриУстановкеНовогоНомераДокументаПоИнформационнойБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриУстановкеНовогоКодаСправочникаПоИнформационнойБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИспользованиеГлобальныхДополнительныхОтчетовИОбработок</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>АдреснаяКнига</Subsystem>
+			<Subsystem>АктуализацияДанных</Subsystem>
+			<Subsystem>Вопросы</Subsystem>
+			<Subsystem>БронированиеПомещений</Subsystem>
+			<Subsystem>БизнесПроцессыИЗадачи</Subsystem>
+			<Subsystem>Виджеты</Subsystem>
+			<Subsystem>ВстроеннаяПочта</Subsystem>
+			<Subsystem>ДокументооборотПраваДоступа</Subsystem>
+			<Subsystem>Задачи</Subsystem>
+			<Subsystem>Заметки</Subsystem>
+			<Subsystem>ЗамещающиеИПомощники</Subsystem>
+			<Subsystem>ИнформационнаяПоддержка</Subsystem>
+			<Subsystem>КомплектыДокументов</Subsystem>
+			<Subsystem>Контроль</Subsystem>
+			<Subsystem>ЛегкаяПочта</Subsystem>
+			<Subsystem>МашинноеОбучениеДокументооборот</Subsystem>
+			<Subsystem>Мероприятия</Subsystem>
+			<Subsystem>МобильныйДокументооборот</Subsystem>
+			<Subsystem>МЭДО</Subsystem>
+			<Subsystem>МЭДОДокументооборот</Subsystem>
+			<Subsystem>НагрузочноеТестирование</Subsystem>
+			<Subsystem>Напоминания</Subsystem>
+			<Subsystem>НСИ</Subsystem>
+			<Subsystem>ОбзорОбъектов</Subsystem>
+			<Subsystem>ОбменСКонтрагентамиПоЭДО</Subsystem>
+			<Subsystem>ОбновлениеКэширующихДанных</Subsystem>
+			<Subsystem>ОбработкаОбъектов</Subsystem>
+			<Subsystem>ОбращенияГраждан</Subsystem>
+			<Subsystem>Отсутствия</Subsystem>
+			<Subsystem>ОценкаПроизводительностиДокументооборот</Subsystem>
+			<Subsystem>ОчередьЗаданийДокументооборота</Subsystem>
+			<Subsystem>Планировщик</Subsystem>
+			<Subsystem>ПомощникОтправить</Subsystem>
+			<Subsystem>Почта</Subsystem>
+			<Subsystem>ПравилаКоммуникаций</Subsystem>
+			<Subsystem>Проекты</Subsystem>
+			<Subsystem>ПротоколированиеРаботыСотрудников</Subsystem>
+			<Subsystem>РабочийКалендарь</Subsystem>
+			<Subsystem>РедакторВстроенногоЯзыка</Subsystem>
+			<Subsystem>РедакцииКонфигурацииДокументооборот</Subsystem>
+			<Subsystem>Реестры</Subsystem>
+			<Subsystem>РекомендованныеНастройки</Subsystem>
+			<Subsystem>СамочувствиеСотрудников</Subsystem>
+			<Subsystem>СинхронизацияDAV</Subsystem>
+			<Subsystem>СинхронизацияGoogle</Subsystem>
+			<Subsystem>Сотрудники</Subsystem>
+			<Subsystem>СписокПоследних</Subsystem>
+			<Subsystem>СтруктураПредприятия</Subsystem>
+			<Subsystem>Уведомления</Subsystem>
+			<Subsystem>УдалениеПомеченных</Subsystem>
+			<Subsystem>УправлениеПоКонтрольнымТочкам</Subsystem>
+			<Subsystem>ФизическиеЛица</Subsystem>
+			<Subsystem>ФлагиОбъектов</Subsystem>
+			<Subsystem>Форум</Subsystem>
+			<Subsystem>АлгоритмыПроверки</Subsystem>
+			<Subsystem>БизнесСобытия</Subsystem>
+			<Subsystem>БыстрыйПоиск</Subsystem>
+			<Subsystem>ВнешнийБуферДанных</Subsystem>
+			<Subsystem>ВстраиваниеБИП</Subsystem>
+			<Subsystem>ЧасовыеПояса</Subsystem>
+			<Subsystem>ЧатБот</Subsystem>
+			<Subsystem>Штрихкоды</Subsystem>
+			<Subsystem>ЭлектронныеПодписи</Subsystem>
+			<Subsystem>Юрлица</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="e15662a8-748c-46a2-9538-eb27784d0fba">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Календари" category="Object">
+				<xr:TypeId>4372a9e4-5396-47ca-bcce-7986e5c26768</xr:TypeId>
+				<xr:ValueId>79b27c09-fafc-4bf2-a5a4-1e9a166eff76</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Календари" category="Ref">
+				<xr:TypeId>4cb34d5a-86df-4506-81a3-4c4bba7f0882</xr:TypeId>
+				<xr:ValueId>5a5d8952-2bcc-4090-8141-0ed533231ada</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Календари" category="Selection">
+				<xr:TypeId>f2be6fa4-2852-4805-a0e7-4e59f5ca382e</xr:TypeId>
+				<xr:ValueId>be849444-85ed-48eb-9d37-ada4bc7e8aaf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Календари" category="List">
+				<xr:TypeId>e2660a02-1811-43b7-8364-32e583adc31c</xr:TypeId>
+				<xr:ValueId>e03b7337-d4cd-4578-9dc1-5ae10943644b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Календари" category="Manager">
+				<xr:TypeId>5fde1570-8826-4207-85b1-96376ddd1524</xr:TypeId>
+				<xr:ValueId>a312fc56-2acf-4bc6-bc35-aec7084e87e7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Календари</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1c09bf33-9b54-4bfd-bc92-e7324025fab0</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

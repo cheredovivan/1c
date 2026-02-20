@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="63b00acf-81f6-49e2-8931-2ae10124431a">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ТранспортнаяНакладная" category="Object">
+				<xr:TypeId>3b757c2a-cd9c-4ed2-b94c-61f3df8b006a</xr:TypeId>
+				<xr:ValueId>a40332a8-5c3a-4cfb-bd9f-d1cc364fc69f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ТранспортнаяНакладная" category="Ref">
+				<xr:TypeId>a11807c2-76e5-4dd5-86ff-35227a186cbc</xr:TypeId>
+				<xr:ValueId>fa93464e-66a1-437e-95dd-323e65c1cb20</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ТранспортнаяНакладная" category="Selection">
+				<xr:TypeId>44737e16-88ba-4c23-aa43-cba4d0e7ef72</xr:TypeId>
+				<xr:ValueId>43624e35-ffdf-4433-9dce-25925cd65642</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ТранспортнаяНакладная" category="List">
+				<xr:TypeId>c90f9c6c-7e42-4590-b09b-648b0c229185</xr:TypeId>
+				<xr:ValueId>dee67a54-b4ab-4801-a0e5-42adb2fc7470</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ТранспортнаяНакладная" category="Manager">
+				<xr:TypeId>42268cdb-7936-4179-a31c-e6dec15a74cd</xr:TypeId>
+				<xr:ValueId>c55bcea1-d04a-400b-969e-0d6907c7b36a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТранспортнаяНакладная</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

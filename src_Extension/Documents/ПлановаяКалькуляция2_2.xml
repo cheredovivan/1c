@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="ebffca03-14b4-4d71-ad29-e00a5916d0e3">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПлановаяКалькуляция2_2" category="Object">
+				<xr:TypeId>e1c3afe4-c77d-43c5-a062-b8e4c2f97fd1</xr:TypeId>
+				<xr:ValueId>f66c4091-576a-48ee-a954-8a37852b25bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПлановаяКалькуляция2_2" category="Ref">
+				<xr:TypeId>7df81533-d18d-4ac2-b286-913fabb8ab49</xr:TypeId>
+				<xr:ValueId>48488f95-7384-48c3-ab94-6c64f367bcac</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПлановаяКалькуляция2_2" category="Selection">
+				<xr:TypeId>b31e2904-e528-4485-871c-4144ee9ef4df</xr:TypeId>
+				<xr:ValueId>b1622c20-14b0-4247-83a0-a954504fd19a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПлановаяКалькуляция2_2" category="List">
+				<xr:TypeId>aae80c57-ad47-4c42-81ef-12981292b477</xr:TypeId>
+				<xr:ValueId>8361680b-4173-4f7f-a162-51886d997503</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПлановаяКалькуляция2_2" category="Manager">
+				<xr:TypeId>63a4aa61-00f3-4b33-bca2-b319a6bda063</xr:TypeId>
+				<xr:ValueId>0a85d22b-761a-43d2-b7a5-6a01fd0e4d95</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПлановаяКалькуляция2_2</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d5e7e653-8d66-46e8-b6e3-c0c84979b2df</ExtendedConfigurationObject>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.А1_ПлановаяСтоимостьМатериаловПоЗаказу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.А1_ПлановаяСтоимостьТрудозатратПоЗаказу</xr:Item>
+			</RegisterRecords>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="b980b80c-797a-418e-8786-c64e3e23b100">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидЦены</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c018cc18-3b1e-405e-80a0-8af6872c80bf</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="426a1eff-44e7-4f2f-a1ca-018680fff715">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9c843b76-b043-4ec0-b55b-14d50f8d3c47</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0f3daa74-f98f-46c5-b67b-ffba8481ae48">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПодразделениеДиспетчер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1870679a-d478-4986-97be-724af374e096</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="16b9ab87-8a0b-4291-b63f-ec4257ff24d2">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПлановаяКалькуляция2_2.ОбъектыКалькуляции" category="TabularSection">
+						<xr:TypeId>85c5e867-551e-4efb-840d-38d71741dd67</xr:TypeId>
+						<xr:ValueId>969978af-a937-4d5d-af08-72f72fd100bb</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПлановаяКалькуляция2_2.ОбъектыКалькуляции" category="TabularSectionRow">
+						<xr:TypeId>c2f3ed1a-e200-48fa-a933-010dff87ea48</xr:TypeId>
+						<xr:ValueId>1bcfbda4-9780-4eab-b368-4df80d9eaf0e</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбъектыКалькуляции</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ed170115-9389-4ffc-8d02-b40ed2895d00</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="a423efa2-2537-40c5-9c0e-59d3199bc2d6">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Номенклатура</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>6be73e90-fcb2-429d-8ef0-404e85029835</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="8b175767-55ec-47d1-9755-3cf5c8a7ef5c">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Объект</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>0836b47f-43dc-440d-b996-58dae2a107fa</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="cf355bd1-41f7-4fb3-8ade-a5054361f9c8">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КоличествоУпаковок</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>649e2652-d37b-45a7-82ef-41413a74563a</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

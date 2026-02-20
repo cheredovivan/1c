@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="95309cd2-ad3f-462e-95f7-e892aab9993d">
+		<Properties>
+			<Name>Клиент</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_АдаптацияИнтерфейса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_АдаптацияИнтерфейсаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_ВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_Клиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_КлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_КлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_ПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МК_Служебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.МК_КарточкаСхемыОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.МК_ПоискПоШтрихКоду</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.МК_ПоискПоШтрихкоду</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_АдреснаяКнига</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВариантГруппировкиЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетЕжедневныеОтчеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетЗадачиМне</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетЗадачиОтМеня</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетЗадачиПодчиненных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетКалендарь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетКонтроль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетМоиДокументы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетОтсутствия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетСканер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетФорум</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ВиджетЯРедактирую</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ИспользоватьРазноцветныеВиджеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КартинкаВыполненияЗадачиСЗамечаниями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КартинкаОтрицательногоВыполненияЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КоллекцияСостоянияПроцессовИЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КоллекцияСтрокВариантыВажности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КоллекцияСтрокКонтроль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КоллекцияСтрокСкрепка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КоллекцияСтрокСостоянийПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КоллекцияФлаги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаВложениеАудио</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаВложениеВидео</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаВложениеФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаВложениеФото</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаКонтроль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаКорзина</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаОтветить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаОтветитьВсем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаОтправить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаПапка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_КомандаПереслать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторЗаглушка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторЗадачиМне</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторКалендарь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторКонтроль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторОтсутствия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НавигаторУчетВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_НовоеПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ПоискПоШтрихкоду</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_РазделГлавная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_РазделЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_РазделНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_РазделПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_СканерДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_Фильтр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МК_ФильтрНеПрочтенные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ВстроенныйЗаголовокВиджетаШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_МинимальныйШрифтДляОтступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ПодписьВиджетаШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ФонВиджетаБелый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ФонВиджетаЖелтый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ФонВиджетаЗеленый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ФонВиджетаОранжевый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ФонВиджетаСерый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ФонВиджетаСиний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветАвтораИсполнителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветАктивнойДополнительнойКнопки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветВиджета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветДополнительнойКнопки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветПоказателяПревышениеПорога</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветТекстаАкцентнойКнопки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветТекстаПоляФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ЦветФонаГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтАвтораИсполнителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтАкцентнойКнопки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтВСпискеДополнительный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтВСпискеОсновной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтДополнительнойКнопки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтДополнительнойТаблицы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтПоказателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтПоляФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МК_ШрифтСпискаВиджета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МК_СведенияОМобильныхОнлайнКлиентах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ЭтоМобильныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЗапускМобильногоКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаблокироватьОткрытиеФормНаМобильномКлиентеЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НастройкаМобильныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КэшМобильныхСканов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КраткиеТекстыПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КодОтправителяСервисаПередачиУведомлений1СМК</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

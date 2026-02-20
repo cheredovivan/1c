@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="e2b52eaa-dd94-4e17-b88e-85fd302dc95e">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РазрядыКатегорииДолжностей" category="Object">
+				<xr:TypeId>54c9bc68-58e6-4042-8079-bb5da5715413</xr:TypeId>
+				<xr:ValueId>0197a72e-0d60-4d39-a495-04d7abee2212</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РазрядыКатегорииДолжностей" category="Ref">
+				<xr:TypeId>d578ea23-9720-4ae6-970b-5633c975627e</xr:TypeId>
+				<xr:ValueId>3308d0ad-6a13-42fc-b2d9-c16b5588f5d0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РазрядыКатегорииДолжностей" category="Selection">
+				<xr:TypeId>2c6435f5-d4b1-452e-b987-5f336555b40c</xr:TypeId>
+				<xr:ValueId>cb41c330-d017-4030-8f6c-cb85aecbfa8a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РазрядыКатегорииДолжностей" category="List">
+				<xr:TypeId>0a877368-913f-4a36-89c5-49c9279fedb8</xr:TypeId>
+				<xr:ValueId>1583b759-226d-42db-9bc9-0a61cdafc5f5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РазрядыКатегорииДолжностей" category="Manager">
+				<xr:TypeId>efc6bf40-6ed2-4b22-a1ae-8252b8910ef9</xr:TypeId>
+				<xr:ValueId>b1843c00-7e1b-410b-84d7-565371ed1e85</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РазрядыКатегорииДолжностей</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>ba2ed569-c7ca-49fc-bb59-46f473d5b6e1</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

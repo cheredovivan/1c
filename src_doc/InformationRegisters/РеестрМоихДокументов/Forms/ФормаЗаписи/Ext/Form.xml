@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Пользователь" id="1">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ДатаСортировки" id="4">
+			<DataPath>Запись.ДатаСортировки</DataPath>
+			<ContextMenu name="ДатаСортировкиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаСортировкиРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДокументПредприятия" id="7">
+			<DataPath>Запись.ДокументПредприятия</DataPath>
+			<ContextMenu name="ДокументПредприятияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДокументПредприятияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="БезОтвета" id="10">
+			<DataPath>Запись.БезОтвета</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="БезОтветаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="БезОтветаРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<InputField name="ВидДокумента" id="13">
+			<DataPath>Запись.ВидДокумента</DataPath>
+			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="ДобавленВручную" id="16">
+			<DataPath>Запись.ДобавленВручную</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ДобавленВручнуюКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДобавленВручнуюРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="Истекает" id="19">
+			<DataPath>Запись.Истекает</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИстекаетКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИстекаетРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<CheckBoxField name="НазначенаЗадачаМне" id="25">
+			<DataPath>Запись.НазначенаЗадачаМне</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НазначенаЗадачаМнеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НазначенаЗадачаМнеРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОтправленаЗадачаОтМеня" id="28">
+			<DataPath>Запись.ОтправленаЗадачаОтМеня</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтправленаЗадачаОтМеняКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ОтправленаЗадачаОтМеняРасширеннаяПодсказка" id="30"/>
+		</CheckBoxField>
+		<InputField name="ПредставлениеДокумента" id="31">
+			<DataPath>Запись.ПредставлениеДокумента</DataPath>
+			<ContextMenu name="ПредставлениеДокументаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПредставлениеДокументаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Проект" id="34">
+			<DataPath>Запись.Проект</DataPath>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<CheckBoxField name="Просрочен" id="37">
+			<DataPath>Запись.Просрочен</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПросроченКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ПросроченРасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЯвляюсьАвторомДокумента" id="40">
+			<DataPath>Запись.ЯвляюсьАвторомДокумента</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЯвляюсьАвторомДокументаКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ЯвляюсьАвторомДокументаРасширеннаяПодсказка" id="42"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЯвляюсьАвторомУтвержденияДокумента" id="43">
+			<DataPath>Запись.ЯвляюсьАвторомУтвержденияДокумента</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЯвляюсьАвторомУтвержденияДокументаКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ЯвляюсьАвторомУтвержденияДокументаРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЯвляюсьОтветственнымЗаДокумент" id="46">
+			<DataPath>Запись.ЯвляюсьОтветственнымЗаДокумент</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЯвляюсьОтветственнымЗаДокументКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ЯвляюсьОтветственнымЗаДокументРасширеннаяПодсказка" id="48"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЯвляюсьПодписантомДокумента" id="49">
+			<DataPath>Запись.ЯвляюсьПодписантомДокумента</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЯвляюсьПодписантомДокументаКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ЯвляюсьПодписантомДокументаРасширеннаяПодсказка" id="51"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.РеестрМоихДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

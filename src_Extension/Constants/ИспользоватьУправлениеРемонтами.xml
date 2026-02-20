@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Constant uuid="4c66522c-5130-4373-980e-8391fe0b9d95">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьУправлениеРемонтами" category="Manager">
+				<xr:TypeId>69e13c3e-2218-416c-b014-cffbca804b99</xr:TypeId>
+				<xr:ValueId>e449f107-e845-46d6-b65a-aa7dd8355dad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьУправлениеРемонтами" category="ValueManager">
+				<xr:TypeId>331f28e2-7801-42bd-afd9-29d8b1b91cfb</xr:TypeId>
+				<xr:ValueId>68eae0e5-d7f7-45c0-9db2-8f3fc24166f4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьУправлениеРемонтами" category="ValueKey">
+				<xr:TypeId>5a3676b3-3fb0-5f00-9f28-dd71b2eaaf69</xr:TypeId>
+				<xr:ValueId>dfbe2825-2700-53b3-b9d8-286c858fa2e0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьУправлениеРемонтами</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

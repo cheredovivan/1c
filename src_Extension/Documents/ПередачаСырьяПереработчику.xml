@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="466a689e-9d4a-4109-b524-ff2fe4ba5c8b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПередачаСырьяПереработчику" category="Object">
+				<xr:TypeId>e679f631-de73-476c-8bc6-8492d4659500</xr:TypeId>
+				<xr:ValueId>2920c76d-50fb-40e6-97a0-4c7a63b3cbef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПередачаСырьяПереработчику" category="Ref">
+				<xr:TypeId>8b57b532-05af-4ebc-bcdf-02245717b39a</xr:TypeId>
+				<xr:ValueId>d3ba2c72-11a1-498a-aa0d-0df4ee5f335e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПередачаСырьяПереработчику" category="Selection">
+				<xr:TypeId>1928026b-5a74-45bc-aba7-d4fffeb755af</xr:TypeId>
+				<xr:ValueId>aa385c44-20dd-4743-9407-3169ec61d886</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПередачаСырьяПереработчику" category="List">
+				<xr:TypeId>70341632-a294-4ee4-94bb-3e630133d1b5</xr:TypeId>
+				<xr:ValueId>c23458f7-8c9b-4212-b167-65b9fd8decf8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПередачаСырьяПереработчику" category="Manager">
+				<xr:TypeId>0c4b0d08-837e-416a-95ef-ecf47727909f</xr:TypeId>
+				<xr:ValueId>cf1ba9f0-eedd-4b10-a31f-bc5eeaadf5ad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПередачаСырьяПереработчику</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>875880ed-82fe-442b-a3d0-193a359c10f3</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

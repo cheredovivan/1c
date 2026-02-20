@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="aa484327-f212-4c28-bd2d-2ee41b8b9bc5">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СостоянияЗаказовНаПроизводство" category="Record">
+				<xr:TypeId>bf1ff2aa-f77e-4078-aa87-8ef53cf4e7d6</xr:TypeId>
+				<xr:ValueId>f22c550b-48f5-4872-b0cd-0527fe0931c6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СостоянияЗаказовНаПроизводство" category="Manager">
+				<xr:TypeId>3ecdf770-f637-419e-90b8-ad2dfa71e067</xr:TypeId>
+				<xr:ValueId>9f7331fa-335e-4aaa-bf1e-fa4f59eed198</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СостоянияЗаказовНаПроизводство" category="Selection">
+				<xr:TypeId>40e4cd71-1563-4f2b-8f7c-7c842489e829</xr:TypeId>
+				<xr:ValueId>132d4cd5-1099-4f7e-8e83-f1f6434aac12</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СостоянияЗаказовНаПроизводство" category="List">
+				<xr:TypeId>3e2f357b-6b74-4fdd-a4a9-9c80e2494906</xr:TypeId>
+				<xr:ValueId>54e54796-c2ec-4f62-b211-afb29e24bf80</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СостоянияЗаказовНаПроизводство" category="RecordSet">
+				<xr:TypeId>f1202613-216e-46b0-9778-44c497f46d2b</xr:TypeId>
+				<xr:ValueId>258f30e1-9b72-4a18-8a8d-8acbd0a656f9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СостоянияЗаказовНаПроизводство" category="RecordKey">
+				<xr:TypeId>23d2c670-b493-4eca-9ab9-6949f9d4bce0</xr:TypeId>
+				<xr:ValueId>13b07110-813a-432c-9880-6522a2ddf60f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СостоянияЗаказовНаПроизводство" category="RecordManager">
+				<xr:TypeId>4e8cda1d-b20d-4a3e-b270-52b1840f173c</xr:TypeId>
+				<xr:ValueId>98a150c7-3fc6-4379-b749-a1977e78981a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияЗаказовНаПроизводство</Name>
+			<Comment/>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="920f4992-ef87-43dd-a882-9641e2b079c7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СостояниеЭтапов</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияЗаказовНаПроизводствоВОчереди</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="e70a9a45-8d83-4706-836d-a9f583cd1819">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СостояниеОбеспечения</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияЗаказовНаПроизводствоВОчереди</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="054f652c-7156-47ae-8aff-ff55d0ea2e13">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СостояниеВыпуска</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияЗаказовНаПроизводствоВОчереди</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="d9136586-91a9-4a0c-a0be-ea687d1eb278">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Заказ</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

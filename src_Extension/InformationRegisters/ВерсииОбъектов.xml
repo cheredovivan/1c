@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="c596960f-88ee-4bfb-9f80-eeccc42ebb5b">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ВерсииОбъектов" category="Record">
+				<xr:TypeId>06dacc85-7711-4a12-a651-d8863a6a380a</xr:TypeId>
+				<xr:ValueId>e07b93cf-757b-4fe9-809b-5a0ec77fc878</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ВерсииОбъектов" category="Manager">
+				<xr:TypeId>f465c95d-64e7-4d17-bc39-5795961548a8</xr:TypeId>
+				<xr:ValueId>b50217a3-2f98-4d14-826c-85314bf6eb93</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ВерсииОбъектов" category="Selection">
+				<xr:TypeId>492a8620-768a-469a-8cec-c991a0422b11</xr:TypeId>
+				<xr:ValueId>e3071321-2980-4c9d-8606-0ce37eef47dc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ВерсииОбъектов" category="List">
+				<xr:TypeId>6c8d0f3f-f5ec-448a-b03a-c51f2665c10d</xr:TypeId>
+				<xr:ValueId>4e865b4d-ec50-4d34-8229-bf2b85c41dbd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ВерсииОбъектов" category="RecordSet">
+				<xr:TypeId>2f7636b1-1ac9-4b50-aa11-4dbd42733209</xr:TypeId>
+				<xr:ValueId>1cbd792d-ec34-4da6-a8f1-e942953567cf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ВерсииОбъектов" category="RecordKey">
+				<xr:TypeId>ce0a85f0-1cf8-4b37-ab6a-2200781d636b</xr:TypeId>
+				<xr:ValueId>bb0113e5-8364-4938-bb6b-dd5371f11b8e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ВерсииОбъектов" category="RecordManager">
+				<xr:TypeId>0462aa45-cec2-49b7-a6d2-7e419699e805</xr:TypeId>
+				<xr:ValueId>bc99cad3-ccae-4ef6-b55b-d1c0004d0603</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВерсииОбъектов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>0b13cad5-91ae-4cd1-a620-9a315ae8024c</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="81c1094b-5fa8-42b5-a8b8-ade7594e705c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаВерсии</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>81dd61e5-fe02-4272-a525-affda9b606ca</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="b5be005b-a9f6-402a-a5c1-d7b9dca6eadf">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Объект</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0f6f8fd9-b3af-4d06-bc47-bdad238d15b7</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

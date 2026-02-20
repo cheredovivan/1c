@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<VerticalSpacing>None</VerticalSpacing>
+	<Customizable>false</Customizable>
+	<CommandSet>
+		<ExcludedCommand>Help</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаНастройки" id="104">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<Height>2</Height>
+				<CommandName>Form.Command.Настройки</CommandName>
+				<BackColor>style:МК_ЦветДополнительнойКнопки</BackColor>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Настройки</v8:content>
+					</v8:item>
+				</Title>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаНастройкиРасширеннаяПодсказка" id="105"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаРезультатов" id="42">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+			<RowInputMode>BeforeCurrentRow</RowInputMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<Header>false</Header>
+			<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<DataPath>ТаблицаРезультатов</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты сканирования:</v8:content>
+				</v8:item>
+			</Title>
+			<SearchControlLocation>CommandBar</SearchControlLocation>
+			<CurrentRowUse>SelectionPresentation</CurrentRowUse>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаРезультатовКонтекстноеМеню" id="44">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ТаблицаРезультатовКонтекстноеМенюОткрытьОбъект" id="117">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаРезультатовКонтекстноеМенюОткрытьОбъектРасширеннаяПодсказка" id="118"/>
+					</Button>
+					<Button name="ТаблицаРезультатовКонтекстноеМенюОткрытьВНастольном" id="119">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьВНастольном</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Открыть в настольном</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаРезультатовКонтекстноеМенюОткрытьВНастольномРасширеннаяПодсказка" id="120"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ТаблицаРезультатовКоманднаяПанель" id="43">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаРезультатовРасширеннаяПодсказка" id="45"/>
+			<SearchStringAddition name="ТаблицаРезультатовСтрокаПоиска" id="46">
+				<AdditionSource>
+					<Item>ТаблицаРезультатов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаРезультатовСтрокаПоискаКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ТаблицаРезультатовСтрокаПоискаРасширеннаяПодсказка" id="48"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаРезультатовСостояниеПросмотра" id="52">
+				<AdditionSource>
+					<Item>ТаблицаРезультатов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаРезультатовСостояниеПросмотраКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="ТаблицаРезультатовСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаРезультатовУправлениеПоиском" id="49">
+				<AdditionSource>
+					<Item>ТаблицаРезультатов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаРезультатовУправлениеПоискомКонтекстноеМеню" id="50"/>
+				<ExtendedTooltip name="ТаблицаРезультатовУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ТаблицаРезультатовПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="ТаблицаРезультатовГруппа" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица результатов группа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ТаблицаРезультатовГруппаРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<InputField name="ТаблицаРезультатовКлюч" id="55">
+							<DataPath>ТаблицаРезультатов.Ключ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ключ</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТаблицаРезультатовКлючКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ТаблицаРезультатовКлючРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<ColumnGroup name="ТаблицаРезультатовГруппаВтораяСтрока" id="99">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица результатов группа вторая строка</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ТаблицаРезультатовГруппаВтораяСтрокаРасширеннаяПодсказка" id="100"/>
+							<ChildItems>
+								<InputField name="ТаблицаРезультатовПредставлениеОбъекта" id="136">
+									<DataPath>ТаблицаРезультатов.ПредставлениеОбъекта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Представление объекта</v8:content>
+										</v8:item>
+									</Title>
+									<Font ref="style:SmallTextFont" kind="StyleItem"/>
+									<ContextMenu name="ТаблицаРезультатовПредставлениеОбъектаКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ТаблицаРезультатовПредставлениеОбъектаРасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="ТаблицаРезультатовШтрихкод" id="82">
+									<DataPath>ТаблицаРезультатов.Штрихкод</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Штрихкод</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<TextColor>style:МК_ЦветАвтораИсполнителя</TextColor>
+									<Font ref="style:SmallTextFont" height="7" kind="StyleItem"/>
+									<ContextMenu name="ТаблицаРезультатовШтрихкодКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ТаблицаРезультатовШтрихкодРасширеннаяПодсказка" id="84"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаОткрыть" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalSpacing>Half</HorizontalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОткрытьРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<Button name="ОткрытьОбъект" id="92">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.ОткрытьОбъект</CommandName>
+					<TextColor>style:МК_ЦветТекстаПоляФормы</TextColor>
+					<BackColor>style:МК_ЦветАктивнойДополнительнойКнопки</BackColor>
+					<Font ref="style:МК_ШрифтПоляФормы" height="7" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть</v8:content>
+						</v8:item>
+					</Title>
+					<Shape>Oval</Shape>
+					<ExtendedTooltip name="ОткрытьОбъектРасширеннаяПодсказка" id="93"/>
+				</Button>
+				<Button name="ОткрытьВНастольном" id="94">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.ОткрытьВНастольном</CommandName>
+					<TextColor>style:МК_ЦветТекстаПоляФормы</TextColor>
+					<BackColor>style:МК_ЦветАктивнойДополнительнойКнопки</BackColor>
+					<Font ref="style:МК_ШрифтПоляФормы" height="7" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть в настольном</v8:content>
+						</v8:item>
+					</Title>
+					<Shape>Oval</Shape>
+					<ExtendedTooltip name="ОткрытьВНастольномРасширеннаяПодсказка" id="95"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="115">
+			<Visible>false</Visible>
+			<EnableContentChange>true</EnableContentChange>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки сканера</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Half</VerticalSpacing>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="116"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкаПриОткрытииЗапускатьСканер" id="121">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка при открытии запускать сканер</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаПриОткрытииЗапускатьСканерРасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПриОткрытииЗапускатьСканерЗаголовок" id="123">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="style:SmallTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запускать при открытии</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<ContextMenu name="ДекорацияПриОткрытииЗапускатьСканерЗаголовокКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ДекорацияПриОткрытииЗапускатьСканерЗаголовокРасширеннаяПодсказка" id="125"/>
+						</LabelDecoration>
+						<CheckBoxField name="ЗапускатьПриОткрытии" id="112">
+							<DataPath>ЗапускатьПриОткрытии</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запускать при открытии</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ЗапускатьПриОткрытииКонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="ЗапускатьПриОткрытииРасширеннаяПодсказка" id="114"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкаЗакрытьСканер" id="126">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка закрыть сканер</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаЗакрытьСканерРасширеннаяПодсказка" id="127"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияЗакрытьСканерЗаголовок" id="128">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="style:SmallTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрывать после сканирования</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<ContextMenu name="ДекорацияЗакрытьСканерЗаголовокКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="ДекорацияЗакрытьСканерЗаголовокРасширеннаяПодсказка" id="130"/>
+						</LabelDecoration>
+						<CheckBoxField name="ЗакрыватьПослеСканирования" id="33">
+							<DataPath>ЗакрыватьПослеСканирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрывать после сканирования</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ЗакрыватьПослеСканированияКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ЗакрыватьПослеСканированияРасширеннаяПодсказка" id="35"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкаОткрыватьФормуВНастольном" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка открывать форму в настольном</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаОткрыватьФормуВНастольномРасширеннаяПодсказка" id="132"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОткрыватьФормуВНастольномЗаголовок" id="133">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="style:SmallTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открывать форму в настольном</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<ContextMenu name="ДекорацияОткрыватьФормуВНастольномЗаголовокКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="ДекорацияОткрыватьФормуВНастольномЗаголовокРасширеннаяПодсказка" id="135"/>
+						</LabelDecoration>
+						<CheckBoxField name="ОткрыватьФормуВНастольном" id="30">
+							<DataPath>ОткрыватьФормуВНастольном</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открывать форму в настольном</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:SmallTextFont" kind="StyleItem"/>
+							<TitleLocation>None</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ОткрыватьФормуВНастольномКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ОткрыватьФормуВНастольномРасширеннаяПодсказка" id="32"/>
+							<Events>
+								<Event name="OnChange">ОткрыватьФормуВНастольномПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНиз" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Низ</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНизРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<Button name="СканироватьШтрихкод" id="28">
+					<Type>UsualButton</Type>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<CommandName>Form.Command.СканироватьШтрихкод</CommandName>
+					<TextColor>style:МК_ЦветТекстаАкцентнойКнопки</TextColor>
+					<BackColor>style:AccentColor</BackColor>
+					<BorderColor>style:AccentColor</BorderColor>
+					<Font ref="style:МК_ШрифтПоляФормы" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сканировать штрихкод</v8:content>
+						</v8:item>
+					</Title>
+					<Shape>Oval</Shape>
+					<ShapeRepresentation>Always</ShapeRepresentation>
+					<ExtendedTooltip name="СканироватьШтрихкодРасширеннаяПодсказка" id="29"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаРезультатов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица результатов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ключ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ДокументыПредприятия</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Штрихкод" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Штрихкод</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСканированияМС" id="12">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>20</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеОбъекта" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОткрыватьФормуВНастольном" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открывать форму в настольном</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОткрыватьФормуВНастольном</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗакрыватьПослеСканирования" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрывать после сканирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗакрыватьПослеСканирования</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОбсужденияДоступны" id="14">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗапускатьПриОткрытии" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запускать при открытии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗапускатьПриОткрытии</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СканироватьШтрихкод" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать штрихкод</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.МК_ПоискПоШтрихкоду</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СканироватьШтрихкод</Action>
+		</Command>
+		<Command name="ОткрытьВНастольном" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в настольном</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьВНастольном</Action>
+		</Command>
+		<Command name="ОткрытьОбъект" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьОбъект</Action>
+		</Command>
+		<Command name="Настройки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.МК_РазделНастройки</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Настройки</Action>
+		</Command>
+	</Commands>
+</Form>

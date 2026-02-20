@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="02433665-a295-430f-b80e-53cf7bee0362">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.РасценкиРаботСотрудников" category="Record">
+				<xr:TypeId>32c39201-8fb3-4dac-9b48-71a06a67a7b0</xr:TypeId>
+				<xr:ValueId>be506dec-9eed-4b78-a733-a8316dd363d0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.РасценкиРаботСотрудников" category="Manager">
+				<xr:TypeId>baeb8466-546e-47e0-95f6-5fa6a84a61d1</xr:TypeId>
+				<xr:ValueId>9583207c-be51-41d0-863a-2e2e367cb04e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.РасценкиРаботСотрудников" category="Selection">
+				<xr:TypeId>2057ab2c-b992-4369-be5e-9eb27bd77f16</xr:TypeId>
+				<xr:ValueId>599b2664-bc34-43e0-adf3-256360440e71</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.РасценкиРаботСотрудников" category="List">
+				<xr:TypeId>6786a387-9713-49a5-96e8-73d722670590</xr:TypeId>
+				<xr:ValueId>8e764655-a3bd-4c5c-a376-88ff511c5b79</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.РасценкиРаботСотрудников" category="RecordSet">
+				<xr:TypeId>8355ac59-6452-4178-be49-5943143bd0aa</xr:TypeId>
+				<xr:ValueId>ed75aa58-65cd-4b0c-a99d-c5d038788909</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.РасценкиРаботСотрудников" category="RecordKey">
+				<xr:TypeId>5f240ae5-ea71-4d49-939a-720ab4d944e8</xr:TypeId>
+				<xr:ValueId>7642fb93-aab7-4cef-8fff-35c59c726101</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.РасценкиРаботСотрудников" category="RecordManager">
+				<xr:TypeId>268c4a1f-06ce-478b-b495-6e0daf48d84d</xr:TypeId>
+				<xr:ValueId>cbd45734-1040-420b-9349-3ed02dbaf4f9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РасценкиРаботСотрудников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d7af2017-4a34-4a4b-a8e8-0adfe0261197</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="55b4951a-ecec-4edd-840c-7fdf95823e6b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Расценка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6a06aff6-e137-4235-b19d-cf9f000b6962</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="d2549e9a-8ecc-4ab0-a8cb-40dfd5424c2a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидРабот</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fa5e0119-0bc1-4a2b-9f5e-28104b95a49b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыРаботСотрудников</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="02a278bf-5f28-4315-acd3-1210f906f6af">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КвалификационныйРазряд</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1d1d247a-3152-46d1-b916-30b2687e87fa</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РазрядыКатегорииДолжностей</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

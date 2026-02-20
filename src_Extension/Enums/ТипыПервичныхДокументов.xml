@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="b7ba95e8-b499-4df0-b871-ab692b774f56">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыПервичныхДокументов" category="Ref">
+				<xr:TypeId>9837c494-8dfe-47e8-8b15-da3aa5b03bd6</xr:TypeId>
+				<xr:ValueId>fbaa4263-a193-4fe1-bd6c-f352eb54ee47</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыПервичныхДокументов" category="Manager">
+				<xr:TypeId>0aab1f40-06a1-48db-86ef-3b858250bf25</xr:TypeId>
+				<xr:ValueId>e0d3156a-de2a-4d36-9b0f-9e6445d4a7e1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыПервичныхДокументов" category="List">
+				<xr:TypeId>d8be6ff8-3be7-43dd-b06f-b02fb756bfed</xr:TypeId>
+				<xr:ValueId>d9d8caf2-4601-4087-90f3-58314b082d18</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТипыПервичныхДокументов</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="8d8ce235-1cb2-4f90-a31a-0c0f8915f05e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПриобретениеУПоставщика</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

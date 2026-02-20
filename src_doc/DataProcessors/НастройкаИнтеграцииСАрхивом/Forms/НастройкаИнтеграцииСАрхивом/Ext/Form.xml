@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельExtendedTooltip" id="485"/>
+			<ChildItems>
+				<Button name="КомандаЗаписатьИЗакрыть" id="513">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.КомандаЗаписатьИЗакрыть</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаЗаписатьИЗакрытьРасширеннаяПодсказка" id="514"/>
+				</Button>
+				<Button name="Отмена" id="20">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.StandardCommand.Cancel</CommandName>
+					<ExtendedTooltip name="ОтменаExtendedTooltip" id="487"/>
+				</Button>
+				<Button name="Справка" id="21">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.StandardCommand.Help</CommandName>
+					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="488"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="ГруппаОсновное" id="644">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="645"/>
+			<ChildItems>
+				<CheckBoxField name="ИнтеграцияС1САрхивом" id="646">
+					<DataPath>НаборКонстант.ИнтеграцияС1САрхивом</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вкл. интеграцию</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ИнтеграцияС1САрхивомКонтекстноеМеню" id="647"/>
+					<ExtendedTooltip name="ИнтеграцияС1САрхивомРасширеннаяПодсказка" id="648"/>
+					<Events>
+						<Event name="OnChange">ИнтеграцияС1САрхивомПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="Отступ2" id="649">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Отступ2КонтекстноеМеню" id="650"/>
+					<ExtendedTooltip name="Отступ2РасширеннаяПодсказка" id="651"/>
+				</LabelDecoration>
+				<InputField name="КодДляОбменаСАрхивом" id="652">
+					<DataPath>НаборКонстант.ИнтеграцияС1САрхивомКодБазы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код этой базы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="КодДляОбменаСАрхивомКонтекстноеМеню" id="653"/>
+					<ExtendedTooltip name="КодДляОбменаСАрхивомРасширеннаяПодсказка" id="654">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Код базы должен совпадать со значением реквизита "Код" в справочнике "Источники документов" в базе 1С:Архива.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВерсияФорматаОбменаПоддерживаемая1САрхивом" id="655">
+			<DataPath>НаборКонстант.ВерсияФорматаОбменаПоддерживаемая1САрхивом</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия формата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+			<WarningOnEdit>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контроль версий осуществляется автоматически</v8:content>
+				</v8:item>
+			</WarningOnEdit>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВерсияФорматаОбменаПоддерживаемая1САрхивомКонтекстноеМеню" id="656"/>
+			<ExtendedTooltip name="ВерсияФорматаОбменаПоддерживаемая1САрхивомРасширеннаяПодсказка" id="657">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Максимальная версия формата, поддерживаемая 1С:Архивом.
+
+Контроль версий осуществляется автоматически, но при необходимости можно поменять значение вручную. Например, автоматически не отслеживается откат обновления 1С:Архива (переход с новой версии на старую).</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="570">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="571"/>
+			<ChildItems>
+				<Page name="СтраницаТранспорт" id="572">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспорт обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаТранспортРасширеннаяПодсказка" id="573"/>
+					<ChildItems>
+						<RadioButtonField name="ВидТранспортаСетевойКаталог" id="574">
+							<DataPath>НаборКонстант.ИнтеграцияС1САрхивомВидТранспорта</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Общий сетевой каталог</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВидыТранспортаДляОбменаС1САрхивом.EnumValue.ОбщийКаталог</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ВидТранспортаСетевойКаталогКонтекстноеМеню" id="575"/>
+							<ExtendedTooltip name="ВидТранспортаСетевойКаталогРасширеннаяПодсказка" id="576"/>
+							<Events>
+								<Event name="OnChange">ВидТранспортаСетевойКаталогПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаКаталог" id="577">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКаталогРасширеннаяПодсказка" id="578"/>
+							<ChildItems>
+								<LabelDecoration name="Отступ3" id="579">
+									<Width>1</Width>
+									<ContextMenu name="Отступ3КонтекстноеМеню" id="580"/>
+									<ExtendedTooltip name="Отступ3РасширеннаяПодсказка" id="581"/>
+								</LabelDecoration>
+								<InputField name="ИнтеграцияС1САрхивомКаталог" id="582">
+									<DataPath>НаборКонстант.ИнтеграцияС1САрхивомКаталог</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Каталог</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>\\Servername\ExchangeFolder\</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ИнтеграцияС1САрхивомКаталогКонтекстноеМеню" id="583"/>
+									<ExtendedTooltip name="ИнтеграцияС1САрхивомКаталогРасширеннаяПодсказка" id="584"/>
+									<Events>
+										<Event name="StartChoice">ИнтеграцияС1САрхивомКаталогНачалоВыбора</Event>
+										<Event name="Opening">ИнтеграцияС1САрхивомКаталогОткрытие</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<RadioButtonField name="ВидТранспортаFTPСервер" id="585">
+							<DataPath>НаборКонстант.ИнтеграцияС1САрхивомВидТранспорта</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Каталог на FTP-сервере</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВидыТранспортаДляОбменаС1САрхивом.EnumValue.FTPСервер</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ВидТранспортаFTPСерверКонтекстноеМеню" id="586"/>
+							<ExtendedTooltip name="ВидТранспортаFTPСерверРасширеннаяПодсказка" id="587"/>
+							<Events>
+								<Event name="OnChange">ВидТранспортаFTPСерверПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаFTP" id="588">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>FTP</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаFTPРасширеннаяПодсказка" id="589"/>
+							<ChildItems>
+								<LabelDecoration name="Отступ4" id="590">
+									<Width>1</Width>
+									<ContextMenu name="Отступ4КонтекстноеМеню" id="591"/>
+									<ExtendedTooltip name="Отступ4РасширеннаяПодсказка" id="592"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаПараметрыПодключенияFTP" id="593">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры подключения FTP</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрыПодключенияFTPРасширеннаяПодсказка" id="594"/>
+									<ChildItems>
+										<InputField name="ИнтеграцияС1САрхивомАдресFTP" id="595">
+											<DataPath>НаборКонстант.ИнтеграцияС1САрхивомАдресFTP</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес каталога</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИнтеграцияС1САрхивомАдресFTPКонтекстноеМеню" id="596"/>
+											<ExtendedTooltip name="ИнтеграцияС1САрхивомАдресFTPРасширеннаяПодсказка" id="597"/>
+										</InputField>
+										<UsualGroup name="ГруппаПортРежим" id="598">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Порт режим</v8:content>
+												</v8:item>
+											</Title>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПортРежимРасширеннаяПодсказка" id="599"/>
+											<ChildItems>
+												<InputField name="ИнтеграцияС1САрхивомПортFTP" id="600">
+													<DataPath>НаборКонстант.ИнтеграцияС1САрхивомПортFTP</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Порт</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИнтеграцияС1САрхивомПортFTPКонтекстноеМеню" id="601"/>
+													<ExtendedTooltip name="ИнтеграцияС1САрхивомПортFTPРасширеннаяПодсказка" id="602"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ИнтеграцияС1САрхивомПользовательFTP" id="603">
+											<DataPath>НаборКонстант.ИнтеграцияС1САрхивомПользовательFTP</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИнтеграцияС1САрхивомПользовательFTPКонтекстноеМеню" id="604"/>
+											<ExtendedTooltip name="ИнтеграцияС1САрхивомПользовательFTPРасширеннаяПодсказка" id="605"/>
+										</InputField>
+										<InputField name="ПарольПользователяFTPСервера" id="606">
+											<DataPath>ПарольПользователяFTPСервера</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<PasswordMode>true</PasswordMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПарольПользователяFTPСервераКонтекстноеМеню" id="607"/>
+											<ExtendedTooltip name="ПарольПользователяFTPСервераРасширеннаяПодсказка" id="608"/>
+										</InputField>
+										<CheckBoxField name="ИнтеграцияС1САрхивомПассивныйРежимFTP" id="609">
+											<DataPath>НаборКонстант.ИнтеграцияС1САрхивомПассивныйРежимFTP</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пассивный режим</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИнтеграцияС1САрхивомПассивныйРежимFTPКонтекстноеМеню" id="610"/>
+											<ExtendedTooltip name="ИнтеграцияС1САрхивомПассивныйРежимFTPРасширеннаяПодсказка" id="611"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПрочее" id="612">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаПрочееРасширеннаяПодсказка" id="613"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПубликацияАрхиваНаВебСервере" id="631">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Публикация 1С:Архива на web-сервере</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="ГруппаПубликацияАрхиваНаВебСервереРасширеннаяПодсказка" id="632"/>
+							<ChildItems>
+								<InputField name="АдресПубликации1САрхива" id="633">
+									<DataPath>НаборКонстант.АдресПубликации1САрхива</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Адрес</v8:content>
+										</v8:item>
+									</Title>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>http://Servername/Archive</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="АдресПубликации1САрхиваКонтекстноеМеню" id="634"/>
+									<ExtendedTooltip name="АдресПубликации1САрхиваРасширеннаяПодсказка" id="635"/>
+								</InputField>
+								<InputField name="ИмяПользователя1САрхива" id="636">
+									<DataPath>НаборКонстант.ИмяПользователя1САрхива</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Администратор</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ИмяПользователя1САрхиваКонтекстноеМеню" id="637"/>
+									<ExtendedTooltip name="ИмяПользователя1САрхиваРасширеннаяПодсказка" id="638"/>
+								</InputField>
+								<InputField name="ПарольПользователяВебСервиса" id="639">
+									<DataPath>ПарольПользователяВебСервиса</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольПользователяВебСервисаКонтекстноеМеню" id="640"/>
+									<ExtendedTooltip name="ПарольПользователяВебСервисаРасширеннаяПодсказка" id="641"/>
+								</InputField>
+								<Button name="ПроверитьВебСервис" id="642">
+									<Type>UsualButton</Type>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.ПроверитьВебСервис</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверить подключение</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПроверитьВебСервисРасширеннаяПодсказка" id="643"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>НаборКонстант.ВерсияФорматаОбменаПоддерживаемая1САрхивом</Field>
+				<Field>НаборКонстант.ИспользоватьОтметкиВремени</Field>
+				<Field>НаборКонстант.КаталогСообщенийОбменаДаннымиДляLinux</Field>
+				<Field>НаборКонстант.КаталогСообщенийОбменаДаннымиДляWindows</Field>
+				<Field>НаборКонстант.КаталогСохраненияКопииПротоколаРаботыСотрудниковLinux</Field>
+				<Field>НаборКонстант.КаталогСохраненияКопииПротоколаРаботыСотрудниковWindows</Field>
+				<Field>НаборКонстант.ОграничиватьДоступНаУровнеЗаписей</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ПарольПользователяВебСервиса" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль пользователя веб сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПользователяFTPСервера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоСерверWindows" id="4">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗаписатьИЗакрыть" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандаЗаписатьИЗакрыть</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьВебСервис" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к веб-сервису ArchiveDocuments</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодключениеБЭДСерая</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьВебСервис</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="343dd294-77e5-4134-b6dc-1066ea5e2a23">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыПроизводственныхПроцессов" category="Ref">
+				<xr:TypeId>7e91eb8a-fb1a-42b8-bcd9-1db7d8f13c2a</xr:TypeId>
+				<xr:ValueId>5f085365-5ce8-4f91-a913-3dddc241121a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыПроизводственныхПроцессов" category="Manager">
+				<xr:TypeId>5d9ea756-e54c-49de-884b-58266d913f12</xr:TypeId>
+				<xr:ValueId>bedebd04-48a4-43c8-bdff-a07cc7ed1c15</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыПроизводственныхПроцессов" category="List">
+				<xr:TypeId>0f82012a-8a86-4c7d-b90c-ed68d798c208</xr:TypeId>
+				<xr:ValueId>88879d7c-aa3b-41e2-83f8-f88099eca2aa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТипыПроизводственныхПроцессов</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="f9ac144f-5f08-480d-95bb-e5f9cad63d3e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сборка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>711949ce-de2a-4db3-b1d1-beafbad9c077</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3a96664e-6d82-4931-90c8-17419a06f78a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ремонт</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6d3191d8-db5c-4ec0-a782-b624f6c172e3</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="51a07dd3-d4ac-4ecf-b9ff-70e11129d975">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Разборка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>360bdc74-99f2-40b3-80ef-186faedbda57</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="14f8ffb7-40ec-496d-bb92-a6528a643695">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>БезСпецификаций</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4ba6da6e-9f82-4c09-9dea-53dea22f24fa</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="1fa59bb7-77bc-49de-8d53-b1bad30d1f31">
+		<InternalInfo>
+			<xr:PropertyState>
+				<xr:Property>CommandInterface</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Производство</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c34e8ddf-30ec-464e-95c1-8e74f0a931c2</ExtendedConfigurationObject>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Этапы_Вне_Графика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоЛокальныйДиспетчер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш1_Номенклатура_по_видамработ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.МелкиеТрудозатраты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Исправитьединицуизмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АктОБраке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш1_ДвижениеЗаказовНаПроизводство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш1_МелкиеМатериалы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш1_РСсФормулами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаменаМатериалаВСпецификациях2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.МатериальныйОтчетПоВыпуску</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ГрафикПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПотребностьДеталей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПерепроведениеЭтаповПоДатамПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПотребностьДеталейБезЗаказа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВыпускЦехаСТрудозатратами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.А1_ПлановаяСтоимостьМатериаловПоЗаказу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.А1_ПлановаяСтоимостьТрудозатратПоЗаказу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш1_ОстаткиИДоступностьТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.mcp_ЧатАгента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.А1_СпецификацииВКалькуляциях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.МатериальнаяСпецификацияИзделия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПрименяемостьМатериалаВИзделиях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.МатериальныйОтчетПоВыпускуПоНормам</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

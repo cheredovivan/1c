@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="c8b0e1b1-f4e6-4af1-9aa5-f468bf8fb863">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаказПереработчику" category="Object">
+				<xr:TypeId>c34ce79b-b23a-4305-b79c-d93c1fa7736f</xr:TypeId>
+				<xr:ValueId>19c2d889-62ea-498d-95d5-a18f10213707</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаказПереработчику" category="Ref">
+				<xr:TypeId>37600afd-6796-454a-ac14-a4d051f86410</xr:TypeId>
+				<xr:ValueId>d0460d18-0ccc-43ff-a91a-ac79787fdeb4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаказПереработчику" category="Selection">
+				<xr:TypeId>8b7fb190-696d-487c-9373-093681eca2e4</xr:TypeId>
+				<xr:ValueId>c02d3183-5a32-430d-a9c4-90d0c920348e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаказПереработчику" category="List">
+				<xr:TypeId>7a1e60d3-eafd-4336-a200-004a1cdad8d3</xr:TypeId>
+				<xr:ValueId>2bd0e93e-0cbe-4452-9032-d63810e012c1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаказПереработчику" category="Manager">
+				<xr:TypeId>eeb2b4c7-bc12-415b-ab39-715ef1f7bf3a</xr:TypeId>
+				<xr:ValueId>2a7f63d5-e5cd-4ba3-ad54-ad98b76008a4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаказПереработчику</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

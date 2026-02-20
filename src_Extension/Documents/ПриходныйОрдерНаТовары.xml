@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="3be1ef26-9563-4d2a-b626-834cbc930010">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПриходныйОрдерНаТовары" category="Object">
+				<xr:TypeId>6e3a93f0-df91-4013-8a34-c8ac1ecc6f59</xr:TypeId>
+				<xr:ValueId>e37a4ec6-0b10-4c31-93b2-18dbba7259f6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПриходныйОрдерНаТовары" category="Ref">
+				<xr:TypeId>62aa185c-1eb8-491d-83b7-2d54005d6c10</xr:TypeId>
+				<xr:ValueId>5922cd0f-565a-4aaf-9ab4-c07d838036dc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПриходныйОрдерНаТовары" category="Selection">
+				<xr:TypeId>8d02cb82-9ae0-4577-946d-cf8b1f80e749</xr:TypeId>
+				<xr:ValueId>8aaed4aa-e954-4197-b5d9-1aea68af1f62</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПриходныйОрдерНаТовары" category="List">
+				<xr:TypeId>445019f5-7ccb-4cc0-a40f-ef60127aaa6e</xr:TypeId>
+				<xr:ValueId>e7dae08c-4f63-4243-b6a1-d067de138d82</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПриходныйОрдерНаТовары" category="Manager">
+				<xr:TypeId>61c760e9-bfe0-4765-b882-a2f7e3867565</xr:TypeId>
+				<xr:ValueId>00816333-6819-41f6-8451-bcb4a4ac7df5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПриходныйОрдерНаТовары</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>6a90e124-5af0-4a37-8ff7-14481b8cb2dd</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="fddd4b67-01a5-411c-8ec4-ab252d227a6b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Отправитель</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5a3dfe1b-75d0-4247-8d64-84bab203cf9c</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОтправительПолучательТоваров</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="985a1286-07b0-4800-a1a0-ec38be66a06b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаВходящегоДокумента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9cd3d95f-95cb-4f59-909e-802e5579ac5b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="25062744-c817-44de-935b-681f046965a7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерВходящегоДокумента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0c0f355e-967b-4aef-9cf3-b95cc9fdfcef</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7fa02e61-93ad-41fa-80e3-88d0e0e19e05">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ХозяйственнаяОперация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b49b6320-3833-4d7e-9256-844ccbfa090e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ХозяйственныеОперации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5697f5b3-1648-4f0c-9fe2-b2f57aa5f249">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Помещение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>95326fc6-5780-440a-84af-cd29440e2b58</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СкладскиеПомещения</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d9e7d5bf-97eb-4ef1-a395-b6173c78dcb8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Распоряжение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5dcdee8c-9444-4bd3-ae94-e55f618ed216</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.РаспоряжениеНаПоступление</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="47254ec6-4ded-4562-b567-2647cee28537">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЗонаПриемки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ca8589c8-0a63-4506-aa59-5684f62c08c1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СкладскиеЯчейки</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="71fc5340-f0b6-401b-be22-6f401e5ea6c0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СкладскаяОперация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8a679cf3-b805-4f49-bee6-d93a2702e946</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СкладскиеОперации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="fcd0b726-aacf-4629-b5fd-0fbb828183b5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склад</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d0368be3-8269-42f8-b1e8-5a902ab8fbd0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Template>ПФ_MXL_ПриходныйОрдерНаТовары</Template>
+			<Template>Расш1_МакетПриходныйОрдерСЯчейками</Template>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

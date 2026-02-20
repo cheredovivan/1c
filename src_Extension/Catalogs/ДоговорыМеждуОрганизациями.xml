@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="d83e1f90-3368-49ed-968b-de797a04e8fd">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ДоговорыМеждуОрганизациями" category="Object">
+				<xr:TypeId>4c1236ba-9412-44b1-91e8-93223654525b</xr:TypeId>
+				<xr:ValueId>43dcc259-97ea-4e41-a7b2-d9acd27db371</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ДоговорыМеждуОрганизациями" category="Ref">
+				<xr:TypeId>11b6750e-5388-49fb-b63d-48487b2bb4e2</xr:TypeId>
+				<xr:ValueId>115a3cc7-e48f-4498-bbbe-cce993e1f2ae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ДоговорыМеждуОрганизациями" category="Selection">
+				<xr:TypeId>cec96256-381f-4c69-973e-56017215c106</xr:TypeId>
+				<xr:ValueId>1015ad90-9968-42f6-90b4-8cf37852b56e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ДоговорыМеждуОрганизациями" category="List">
+				<xr:TypeId>12a89509-6efe-4376-bd18-3de3997134ea</xr:TypeId>
+				<xr:ValueId>1e9bc8b2-7af5-4cfd-9dac-1292b4dbba68</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ДоговорыМеждуОрганизациями" category="Manager">
+				<xr:TypeId>8006809f-7ea0-4136-a08f-e0754687f77d</xr:TypeId>
+				<xr:ValueId>afed4452-d1e4-451c-a435-e8f2234d7404</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДоговорыМеждуОрганизациями</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

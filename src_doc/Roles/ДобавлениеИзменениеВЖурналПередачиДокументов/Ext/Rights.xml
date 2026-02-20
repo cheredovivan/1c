@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.20">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
+	<object>
+		<name>Configuration.ДокументооборотКОРП</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.СоздатьЗаписьЖурналаПередачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ДляРегистра_ЖурналПередачиДокументов()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ДляРегистра_ЖурналПередачиДокументов()</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.НастройкиВариантовОтчетовДокументооборот</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.КатегорииОтчетов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЖурналПередачиДокументов.Command.ОткрытьФормуСписка</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<restrictionTemplate>
+		<name>ДляРегистра_ЖурналПередачиДокументов</name>
+		<condition>// Запрос для РС РегистрСведений.ЖурналПередачиДокументов
+// Пример вызова:
+// #ДляРегистра_ЖурналПередачиДокументов() - без параметров
+
+#Если &amp;ДокументооборотИспользоватьОграниченияПравДоступа #Тогда 
+
+	ЖурналПередачиДокументов ИЗ РегистрСведений.ЖурналПередачиДокументов КАК ЖурналПередачиДокументов 
+
+ГДЕ 
+	ИСТИНА В (
+		ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+		ИЗ
+			РегистрСведений.ДескрипторыДляОбъектов КАК ДескрипторыДляОбъектов
+			ЛЕВОЕ СОЕДИНЕНИЕ
+			РегистрСведений.ПраваПоДескрипторамДоступаОбъектов КАК Права
+				ПО ДескрипторыДляОбъектов.Дескриптор = Права.Дескриптор
+		ГДЕ
+			ДескрипторыДляОбъектов.Объект = ЖурналПередачиДокументов.Документ
+			И Права.Пользователь = &amp;ТекущийПользователь
+	) // По полю Документ.
+	
+	И (
+		ЖурналПередачиДокументов.Пользователь ССЫЛКА Справочник.Пользователи
+		ИЛИ ЖурналПередачиДокументов.Пользователь ССЫЛКА Справочник.Сотрудники
+		
+		ИЛИ ЖурналПередачиДокументов.Пользователь ССЫЛКА Справочник.КонтактныеЛица
+		И ИСТИНА В (
+			ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+			ИЗ
+				РегистрСведений.ДескрипторыДляОбъектов КАК ДескрипторыДляОбъектов 
+				ЛЕВОЕ СОЕДИНЕНИЕ
+				РегистрСведений.ПраваПоДескрипторамДоступаОбъектов КАК Права
+					ПО ДескрипторыДляОбъектов.Дескриптор = Права.Дескриптор
+			ГДЕ
+				ДескрипторыДляОбъектов.Объект = ЖурналПередачиДокументов.Пользователь.Владелец
+				И Права.Пользователь = &amp;ТекущийПользователь
+		) // Права на контрагента - владельца данного контактного лица.
+	
+		ИЛИ ЖурналПередачиДокументов.Пользователь ССЫЛКА Справочник.Контрагенты
+		И ИСТИНА В ( 
+			ВЫБРАТЬ ПЕРВЫЕ 1 ИСТИНА
+			ИЗ
+				РегистрСведений.ДескрипторыДляОбъектов КАК ДескрипторыДляОбъектов 
+				ЛЕВОЕ СОЕДИНЕНИЕ
+				РегистрСведений.ПраваПоДескрипторамДоступаОбъектов КАК Права
+					ПО ДескрипторыДляОбъектов.Дескриптор = Права.Дескриптор
+			ГДЕ
+				ДескрипторыДляОбъектов.Объект = ЖурналПередачиДокументов.Пользователь
+				И Права.Пользователь = &amp;ТекущийПользователь
+		) // Права на контрагента.
+	)
+	
+#КонецЕсли</condition>
+	</restrictionTemplate>
+</Rights>

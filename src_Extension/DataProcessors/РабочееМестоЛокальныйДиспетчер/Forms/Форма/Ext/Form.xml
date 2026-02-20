@@ -1,0 +1,2535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Рабочее место "Локальный диспетчер"</v8:content>
+		</v8:item>
+	</Title>
+	<Width>100</Width>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<VerticalSpacing>None</VerticalSpacing>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтборов" id="10">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalSpacing>Half</HorizontalSpacing>
+			<VerticalSpacing>Half</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#FFFFE1</BackColor>
+			<ExtendedTooltip name="ГруппаОтборовРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОтборовСтарое" id="62">
+					<Visible>false</Visible>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборовСтароеРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<InputField name="Отбор_СписокЗначений_Спецификация" id="15">
+							<DataPath>Отбор_СписокЗначений_Спецификация</DataPath>
+							<Visible>false</Visible>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>50</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CreateButton>false</CreateButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Отбор_СписокЗначений_СпецификацияКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="Отбор_СписокЗначений_СпецификацияРасширеннаяПодсказка" id="17"/>
+							<Events>
+								<Event name="OnChange">Отбор_СписокЗначений_СпецификацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Отбор_СписокЗначений_ЗаказНаПроизводство" id="66">
+							<DataPath>Отбор_СписокЗначений_ЗаказНаПроизводство</DataPath>
+							<Visible>false</Visible>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<TitleLocation>Left</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>50</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Отбор_СписокЗначений_ЗаказНаПроизводствоКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="Отбор_СписокЗначений_ЗаказНаПроизводствоРасширеннаяПодсказка" id="68"/>
+							<Events>
+								<Event name="OnChange">Отбор_СписокЗначений_ЗаказНаПроизводствоПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="РабочаяДата" id="153">
+							<DataPath>Объект.РабочаяДата</DataPath>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ContextMenu name="РабочаяДатаКонтекстноеМеню" id="154"/>
+							<ExtendedTooltip name="РабочаяДатаРасширеннаяПодсказка" id="155"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="ОбновитьСписокЭтаповПроизводства" id="84">
+					<Type>UsualButton</Type>
+					<Width>3</Width>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.ОбновитьСписокЭтаповПроизводства</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьСписокЭтаповПроизводстваРасширеннаяПодсказка" id="85"/>
+				</Button>
+				<InputField name="Отбор_Изделние" id="1">
+					<DataPath>Объект.Отбор_Изделие</DataPath>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<TitleLocation>Left</TitleLocation>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="Отбор_ИзделниеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="Отбор_ИзделниеРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">Отбор_ИзделниеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Отбор_СписокЗначений_ПодразделениеИсполнитель" id="12">
+					<DataPath>Объект.Отбор_ПодразделениеИсполнитель</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<TitleLocation>Left</TitleLocation>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="Отбор_СписокЗначений_ПодразделениеИсполнительКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="Отбор_СписокЗначений_ПодразделениеИсполнительРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">Отбор_СписокЗначений_ПодразделениеИсполнительПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="НачатьРаботу" id="80">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.НачатьРаботу</CommandName>
+					<TextColor>#000080</TextColor>
+					<BackColor>#F5FFFF</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="НачатьРаботуРасширеннаяПодсказка" id="81"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУправлениеМатериалами" id="181">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalSpacing>Half</HorizontalSpacing>
+			<VerticalSpacing>Half</VerticalSpacing>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#FFFFE1</BackColor>
+			<ExtendedTooltip name="ГруппаУправлениеМатериаламиРасширеннаяПодсказка" id="182"/>
+			<ChildItems>
+				<LabelField name="ОбработкаЭтапа_РедактируемыйЭтапПроизводстваТекст" id="90">
+					<DataPath>ОбработкаЭтапа_РедактируемыйЭтапПроизводстваТекст</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конечный этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#000080</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<TitleLocation>Left</TitleLocation>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<Width>25</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ОбработкаЭтапа_РедактируемыйЭтапПроизводстваТекстКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ОбработкаЭтапа_РедактируемыйЭтапПроизводстваТекстРасширеннаяПодсказка" id="92"/>
+					<Events>
+						<Event name="Click">ОбработкаЭтапа_РедактируемыйЭтапПроизводстваНажатие</Event>
+					</Events>
+				</LabelField>
+				<Button name="СформироватьТаблицуМатериалов" id="134">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.СформироватьТаблицуМатериалов</CommandName>
+					<TextColor>#000080</TextColor>
+					<BackColor>#F5FFFF</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="СформироватьТаблицуМатериаловРасширеннаяПодсказка" id="135"/>
+				</Button>
+				<Button name="СформироватьТаблицуТрудозатрат" id="241">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.СформироватьТаблицуТрудозатрат</CommandName>
+					<TextColor>#804000</TextColor>
+					<BackColor>#FFF5E6</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="СформироватьТаблицуТрудозатратРасширеннаяПодсказка" id="242"/>
+				</Button>
+				<Button name="ПрименитьВДокументах" id="170">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ПрименитьВДокументах</CommandName>
+					<TextColor>#008000</TextColor>
+					<BackColor>#F5FFF5</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="ПрименитьВДокументахРасширеннаяПодсказка" id="171"/>
+				</Button>
+				<Button name="ОтменитьТекущаюРаботу" id="102">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ОтменитьТекущуюРаботу</CommandName>
+					<TextColor>#800000</TextColor>
+					<BackColor>#FFF5E6</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="ОтменитьТекущаюРаботуРасширеннаяПодсказка" id="103"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницыОсновные" id="18">
+			<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыОсновныеРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<Page name="ГруппаСтраницаЭтапы" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этапы производства</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalSpacing>None</VerticalSpacing>
+					<ExtendedTooltip name="ГруппаСтраницаЭтапыРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<Table name="ДеревоЭтапыПроизводстваПоИзделию" id="22">
+							<Representation>Tree</Representation>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоЭтапыПроизводстваПоИзделию</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМеню" id="23">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюНачатьРаботу" id="82">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НачатьРаботу</CommandName>
+										<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюНачатьРаботуРасширеннаяПодсказка" id="83"/>
+									</Button>
+									<ButtonGroup name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюГруппа01" id="188">
+										<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюГруппа01РасширеннаяПодсказка" id="189"/>
+										<ChildItems>
+											<Button name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюНайти" id="190">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоЭтапыПроизводстваПоИзделию.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюНайтиРасширеннаяПодсказка" id="191"/>
+											</Button>
+											<Button name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюПоискПоТекущемуЗначению" id="194">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоЭтапыПроизводстваПоИзделию.StandardCommand.FindByCurrentValue</CommandName>
+												<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="195"/>
+											</Button>
+											<Button name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюОтменитьПоиск" id="196">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоЭтапыПроизводстваПоИзделию.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="197"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюГруппа02" id="200">
+										<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюГруппа02РасширеннаяПодсказка" id="201"/>
+										<ChildItems>
+											<Button name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюВывестиСписок_ДеревоЭтапыПроизводстваПоИзделию" id="214">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВывестиСписок_ДеревоЭтапыПроизводстваПоИзделию</CommandName>
+												<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКонтекстноеМенюВывестиСписок_ДеревоЭтапыПроизводстваПоИзделиюРасширеннаяПодсказка" id="215"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДеревоЭтапыПроизводстваПоИзделиюКоманднаяПанель" id="24">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюРасширеннаяПодсказка" id="25"/>
+							<SearchStringAddition name="ДеревоЭтапыПроизводстваПоИзделиюСтрокаПоиска" id="26">
+								<AdditionSource>
+									<Item>ДеревоЭтапыПроизводстваПоИзделию</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюСтрокаПоискаКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоЭтапыПроизводстваПоИзделиюСостояниеПросмотра" id="29">
+								<AdditionSource>
+									<Item>ДеревоЭтапыПроизводстваПоИзделию</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюСостояниеПросмотраКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоЭтапыПроизводстваПоИзделиюУправлениеПоиском" id="32">
+								<AdditionSource>
+									<Item>ДеревоЭтапыПроизводстваПоИзделию</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюУправлениеПоискомКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоЭтапыПроизводстваПоИзделиюВыбор</Event>
+								<Event name="BeforeAddRow">ДеревоЭтапыПроизводстваПоИзделиюПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ДеревоЭтапыПроизводстваПоИзделиюПередУдалением</Event>
+								<Event name="OnActivateRow">ДеревоЭтапыПроизводстваПоИзделиюПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюНомер" id="38">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Номер</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>28</Width>
+									<MaxWidth>28</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюНомерКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюНомерРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюНаименование" id="238">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Ссылка.НаименованиеЭтапа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюНаименованиеКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюНаименованиеРасширеннаяПодсказка" id="240"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюИзделиеПолуфабрикат" id="104">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.ИзделиеПолуфабрикат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>40</Width>
+									<MaxWidth>26</MaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюИзделиеПолуфабрикатКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюИзделиеПолуфабрикатРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюПодразделениеИсполнитель" id="41">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.ПодразделениеИсполнитель</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>30</MaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюПодразделениеИсполнительКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюПодразделениеИсполнительРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="КоличествоУпаковокПлан" id="232">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Ссылка.КоличествоУпаковокПлан</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КоличествоУпаковокПланКонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="КоличествоУпаковокПланРасширеннаяПодсказка" id="234"/>
+								</InputField>
+								<InputField name="КоличествоУпаковокФакт" id="235">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Ссылка.КоличествоУпаковокФакт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КоличествоУпаковокФактКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="КоличествоУпаковокФактРасширеннаяПодсказка" id="237"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюНедодел" id="288">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Недодел</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюНедоделКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюНедоделРасширеннаяПодсказка" id="290"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюДата" id="75">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Дата</DataPath>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюДатаКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюДатаРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюСтатус" id="35">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Статус</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюСтатусКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюСтатусРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюСпецификация" id="44">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Спецификация</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюСпецификацияКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюСпецификацияРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюСсылка" id="47">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.Ссылка</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>30</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюСсылкаКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюСсылкаРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюКоличествоПредшествующих" id="50">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.КоличествоПредшествующих</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюКоличествоПредшествующихКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюКоличествоПредшествующихРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюУровеньИерархии" id="53">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.УровеньИерархии</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюУровеньИерархииКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюУровеньИерархииРасширеннаяПодсказка" id="55"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюЗаказНаПроизводство" id="56">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.ЗаказНаПроизводство</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюЗаказНаПроизводствоКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюЗаказНаПроизводствоРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="ДеревоЭтапыПроизводстваПоИзделиюОсновнойЭтапПроизводства" id="172">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию.ОсновнойЭтапПроизводства</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделиюОсновнойЭтапПроизводстваКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделиюОсновнойЭтапПроизводстваРасширеннаяПодсказка" id="174"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаСтраницаЭтапы01" id="186">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтраницаЭтапы01РасширеннаяПодсказка" id="187"/>
+							<ChildItems>
+								<LabelField name="ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводствоТекст" id="59">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводствоТекст</DataPath>
+									<TitleTextColor>#000080</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводствоТекстКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводствоТекстРасширеннаяПодсказка" id="61"/>
+									<Events>
+										<Event name="Click">ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводствоНажатие</Event>
+									</Events>
+								</LabelField>
+								<LabelField name="ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводстваТекст" id="183">
+									<DataPath>ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводстваТекст</DataPath>
+									<TitleTextColor>#000080</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Width>25</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводстваТекстКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводстваТекстРасширеннаяПодсказка" id="185"/>
+									<Events>
+										<Event name="Click">ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводстваНажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаРабота" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корректировка использованных материалов</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalSpacing>None</VerticalSpacing>
+					<ExtendedTooltip name="ГруппаСтраницаРаботаРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСтраницаРабота01" id="88">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#F5F5F5</BackColor>
+							<ExtendedTooltip name="ГруппаСтраницаРабота01РасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<LabelField name="Отбор_Изделние_Пояснение" id="72">
+									<DataPath>Объект.Отбор_ИзделиеТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Конечное изделие</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#000080</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<TitleLocation>Left</TitleLocation>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="Отбор_Изделние_ПояснениеКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="Отбор_Изделние_ПояснениеРасширеннаяПодсказка" id="74"/>
+									<Events>
+										<Event name="Click">Отбор_Изделние_ПояснениеНажатие</Event>
+									</Events>
+								</LabelField>
+								<InputField name="ОбработкаЭтапа_Рапределено" id="99">
+									<DataPath>ОбработкаЭтапа_Рапределено</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>8</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>false</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=0</v8:content>
+										</v8:item>
+									</EditFormat>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ОбработкаЭтапа_РапределеноКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ОбработкаЭтапа_РапределеноРасширеннаяПодсказка" id="101"/>
+									<Events>
+										<Event name="OnChange">ОбработкаЭтапа_РапределеноПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОбработкаЭтапа_Запланировано" id="93">
+									<DataPath>ОбработкаЭтапа_Запланировано</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>8</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>false</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=0</v8:content>
+										</v8:item>
+									</EditFormat>
+									<TextEdit>false</TextEdit>
+									<BackColor>#F5FFF5</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ОбработкаЭтапа_ЗапланированоКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ОбработкаЭтапа_ЗапланированоРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ОбработкаЭтапа_Недодел" id="96">
+									<DataPath>ОбработкаЭтапа_Недодел</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>8</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>false</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=0</v8:content>
+										</v8:item>
+									</EditFormat>
+									<TextEdit>false</TextEdit>
+									<BackColor>#FFF5E6</BackColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ОбработкаЭтапа_НедоделКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ОбработкаЭтапа_НедоделРасширеннаяПодсказка" id="98"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ДеревоИспользованныхМатериалов" id="107">
+							<Representation>Tree</Representation>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоИспользованныхМатериалов</DataPath>
+							<SearchStringLocation>Top</SearchStringLocation>
+							<ContextMenu name="ДеревоИспользованныхМатериаловКонтекстноеМеню" id="108">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюИзменитьНоменклатуруМатериала" id="156">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьНоменклатуруМатериала</CommandName>
+										<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюИзменитьНоменклатуруМатериалаРасширеннаяПодсказка" id="157"/>
+									</Button>
+									<ButtonGroup name="ДеревоИспользованныхМатериаловКонтекстноеМенюГруппа01" id="158">
+										<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюГруппа01РасширеннаяПодсказка" id="159"/>
+										<ChildItems>
+											<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюДобавитьИспользованныйМатериал" id="160">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьИспользованныйМатериал</CommandName>
+												<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюДобавитьИспользованныйМатериалРасширеннаяПодсказка" id="161"/>
+											</Button>
+											<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюУдалитьИспользованныйМатериал" id="168">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьИспользованныйМатериал</CommandName>
+												<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюУдалитьИспользованныйМатериалРасширеннаяПодсказка" id="169"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ДеревоИспользованныхМатериаловКонтекстноеМенюГруппа02" id="198">
+										<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюГруппа02РасширеннаяПодсказка" id="199"/>
+										<ChildItems>
+											<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюНайти" id="204">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоИспользованныхМатериалов.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюНайтиРасширеннаяПодсказка" id="205"/>
+											</Button>
+											<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюПоискПоТекущемуЗначению" id="206">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоИспользованныхМатериалов.StandardCommand.FindByCurrentValue</CommandName>
+												<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="207"/>
+											</Button>
+											<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюОтменитьПоиск" id="208">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ДеревоИспользованныхМатериалов.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="209"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="ДеревоИспользованныхМатериаловКонтекстноеМенюГруппа03" id="210">
+										<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюГруппа03РасширеннаяПодсказка" id="211"/>
+										<ChildItems>
+											<Button name="ДеревоИспользованныхМатериаловКонтекстноеМенюВывестиСписок_ДеревоИспользованныхМатериалов" id="216">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВывестиСписок_ДеревоИспользованныхМатериалов</CommandName>
+												<ExtendedTooltip name="ДеревоИспользованныхМатериаловКонтекстноеМенюВывестиСписок_ДеревоИспользованныхМатериаловРасширеннаяПодсказка" id="217"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ДеревоИспользованныхМатериаловКоманднаяПанель" id="109">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоИспользованныхМатериаловРасширеннаяПодсказка" id="110"/>
+							<SearchStringAddition name="ДеревоИспользованныхМатериаловСтрокаПоиска" id="111">
+								<AdditionSource>
+									<Item>ДеревоИспользованныхМатериалов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоИспользованныхМатериаловСтрокаПоискаКонтекстноеМеню" id="112"/>
+								<ExtendedTooltip name="ДеревоИспользованныхМатериаловСтрокаПоискаРасширеннаяПодсказка" id="113"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоИспользованныхМатериаловСостояниеПросмотра" id="114">
+								<AdditionSource>
+									<Item>ДеревоИспользованныхМатериалов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоИспользованныхМатериаловСостояниеПросмотраКонтекстноеМеню" id="115"/>
+								<ExtendedTooltip name="ДеревоИспользованныхМатериаловСостояниеПросмотраРасширеннаяПодсказка" id="116"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоИспользованныхМатериаловУправлениеПоиском" id="117">
+								<AdditionSource>
+									<Item>ДеревоИспользованныхМатериалов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоИспользованныхМатериаловУправлениеПоискомКонтекстноеМеню" id="118"/>
+								<ExtendedTooltip name="ДеревоИспользованныхМатериаловУправлениеПоискомРасширеннаяПодсказка" id="119"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДеревоИспользованныхМатериаловВыбор</Event>
+								<Event name="BeforeAddRow">ДеревоИспользованныхМатериаловПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ДеревоИспользованныхМатериаловПередУдалением</Event>
+								<Event name="BeforeRowChange">ДеревоИспользованныхМатериаловПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДеревоИспользованныхМатериаловНоменклатураКод" id="128">
+									<DataPath>ДеревоИспользованныхМатериалов.Номенклатура.Code</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловНоменклатураКодКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловНоменклатураКодРасширеннаяПодсказка" id="130"/>
+								</InputField>
+								<InputField name="ДеревоИспользованныхМатериаловНоменклатура" id="120">
+									<DataPath>ДеревоИспользованныхМатериалов.Номенклатура</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>35</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловНоменклатураКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловНоменклатураРасширеннаяПодсказка" id="122"/>
+								</InputField>
+								<InputField name="ДеревоИспользованныхМатериаловУпаковка" id="218">
+									<DataPath>ДеревоИспользованныхМатериалов.Упаковка</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ед.Изм</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>8</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловУпаковкаКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловУпаковкаРасширеннаяПодсказка" id="220"/>
+								</InputField>
+								<InputField name="ДеревоИспользованныхМатериаловКоличествоУпаковокТребуется" id="136">
+									<DataPath>ДеревоИспользованныхМатериалов.КоличествоУпаковокТребуется</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловКоличествоУпаковокТребуетсяКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловКоличествоУпаковокТребуетсяРасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="ДеревоИспользованныхМатериаловКоличествоУпаковокФактически" id="139">
+									<DataPath>ДеревоИспользованныхМатериалов.КоличествоУпаковокФактически</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловКоличествоУпаковокФактическиКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловКоличествоУпаковокФактическиРасширеннаяПодсказка" id="141"/>
+									<Events>
+										<Event name="OnChange">ДеревоИспользованныхМатериаловКоличествоУпаковокФактическиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<ColumnGroup name="ДеревоИспользованныхМатериаловГруппа01" id="227">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В наличии</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>InCell</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловГруппа01РасширеннаяПодсказка" id="228"/>
+									<ChildItems>
+										<InputField name="ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличии" id="221">
+											<DataPath>ДеревоИспользованныхМатериалов.КоличествоУпаковокВНаличии</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<Width>5</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличииКонтекстноеМеню" id="222"/>
+											<ExtendedTooltip name="ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличииРасширеннаяПодсказка" id="223"/>
+										</InputField>
+										<InputField name="ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличииТекст" id="229">
+											<DataPath>ДеревоИспользованныхМатериалов.КоличествоУпаковокВНаличииТекст</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<Width>5</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличииТекстКонтекстноеМеню" id="230"/>
+											<ExtendedTooltip name="ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличииТекстРасширеннаяПодсказка" id="231"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ДеревоИспользованныхМатериаловСсылка" id="142">
+									<DataPath>ДеревоИспользованныхМатериалов.Ссылка</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловСсылкаКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловСсылкаРасширеннаяПодсказка" id="144"/>
+								</InputField>
+								<InputField name="ДеревоИспользованныхМатериаловНоменклатураИсходная" id="162">
+									<DataPath>ДеревоИспользованныхМатериалов.НоменклатураИсходная</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловНоменклатураИсходнаяКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловНоменклатураИсходнаяРасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<CheckBoxField name="ДеревоИспользованныхМатериаловЕстьИзменение" id="145">
+									<DataPath>ДеревоИспользованныхМатериалов.ЕстьИзменение</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоИспользованныхМатериаловЕстьИзменениеКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловЕстьИзменениеРасширеннаяПодсказка" id="147"/>
+								</CheckBoxField>
+								<CheckBoxField name="ДеревоИспользованныхМатериаловИзменениеДоступно" id="148">
+									<DataPath>ДеревоИспользованныхМатериалов.ИзменениеДоступно</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоИспользованныхМатериаловИзменениеДоступноКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловИзменениеДоступноРасширеннаяПодсказка" id="150"/>
+								</CheckBoxField>
+								<InputField name="ДеревоИспользованныхМатериаловИдентификаторСтроки" id="165">
+									<DataPath>ДеревоИспользованныхМатериалов.ИдентификаторСтроки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДеревоИспользованныхМатериаловИдентификаторСтрокиКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловИдентификаторСтрокиРасширеннаяПодсказка" id="167"/>
+								</InputField>
+								<CheckBoxField name="ДеревоИспользованныхМатериаловПроизводитсяВПроцессе" id="224">
+									<DataPath>ДеревоИспользованныхМатериалов.ПроизводитсяВПроцессе</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоИспользованныхМатериаловПроизводитсяВПроцессеКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ДеревоИспользованныхМатериаловПроизводитсяВПроцессеРасширеннаяПодсказка" id="226"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+						<Table name="ТаблицаТрудозатрат" id="243">
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<DataPath>ТаблицаТрудозатрат</DataPath>
+							<SearchStringLocation>Top</SearchStringLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаТрудозатратКонтекстноеМеню" id="244">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаТрудозатратКонтекстноеМенюЗаполнитьИсполнителя" id="286">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьИсполнителяТрудозатрат</CommandName>
+										<ExtendedTooltip name="ТаблицаТрудозатратКонтекстноеМенюЗаполнитьИсполнителяРасширеннаяПодсказка" id="287"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТаблицаТрудозатратКоманднаяПанель" id="245">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаТрудозатратРасширеннаяПодсказка" id="246"/>
+							<SearchStringAddition name="ТаблицаТрудозатратСтрокаПоиска" id="247">
+								<AdditionSource>
+									<Item>ТаблицаТрудозатрат</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаТрудозатратСтрокаПоискаКонтекстноеМеню" id="248"/>
+								<ExtendedTooltip name="ТаблицаТрудозатратСтрокаПоискаРасширеннаяПодсказка" id="249"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаТрудозатратСостояниеПросмотра" id="250">
+								<AdditionSource>
+									<Item>ТаблицаТрудозатрат</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаТрудозатратСостояниеПросмотраКонтекстноеМеню" id="251"/>
+								<ExtendedTooltip name="ТаблицаТрудозатратСостояниеПросмотраРасширеннаяПодсказка" id="252"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаТрудозатратУправлениеПоиском" id="253">
+								<AdditionSource>
+									<Item>ТаблицаТрудозатрат</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаТрудозатратУправлениеПоискомКонтекстноеМеню" id="254"/>
+								<ExtendedTooltip name="ТаблицаТрудозатратУправлениеПоискомРасширеннаяПодсказка" id="255"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ТаблицаТрудозатратПриОкончанииРедактирования</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаТрудозатратЭтапПроизводства" id="256">
+									<DataPath>ТаблицаТрудозатрат.ЭтапПроизводства</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<OpenButton>true</OpenButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратЭтапПроизводстваКонтекстноеМеню" id="257"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратЭтапПроизводстваРасширеннаяПодсказка" id="258"/>
+									<Events>
+										<Event name="Opening">ТаблицаТрудозатратЭтапПроизводстваОткрытие</Event>
+									</Events>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратВидРабот" id="259">
+									<DataPath>ТаблицаТрудозатрат.ВидРабот</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Width>25</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратВидРаботКонтекстноеМеню" id="260"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратВидРаботРасширеннаяПодсказка" id="261"/>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратКоличество" id="262">
+									<DataPath>ТаблицаТрудозатрат.Количество</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Плановое</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратКоличествоКонтекстноеМеню" id="263"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратКоличествоРасширеннаяПодсказка" id="264"/>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратКоличествоФактически" id="265">
+									<DataPath>ТаблицаТрудозатрат.КоличествоФактически</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фактически</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратКоличествоФактическиКонтекстноеМеню" id="266"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратКоличествоФактическиРасширеннаяПодсказка" id="267"/>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратИсполнитель" id="268">
+									<DataPath>ТаблицаТрудозатрат.Исполнитель</DataPath>
+									<Width>25</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратИсполнительКонтекстноеМеню" id="269"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратИсполнительРасширеннаяПодсказка" id="270"/>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратПодразделение" id="271">
+									<DataPath>ТаблицаТрудозатрат.Подразделение</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Width>20</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратПодразделениеКонтекстноеМеню" id="272"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратПодразделениеРасширеннаяПодсказка" id="273"/>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратСтатьяКалькуляции" id="274">
+									<DataPath>ТаблицаТрудозатрат.СтатьяКалькуляции</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратСтатьяКалькуляцииКонтекстноеМеню" id="275"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратСтатьяКалькуляцииРасширеннаяПодсказка" id="276"/>
+								</InputField>
+								<InputField name="ТаблицаТрудозатратНазначениеРабот" id="277">
+									<DataPath>ТаблицаТрудозатрат.НазначениеРабот</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаТрудозатратНазначениеРаботКонтекстноеМеню" id="278"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратНазначениеРаботРасширеннаяПодсказка" id="279"/>
+								</InputField>
+								<CheckBoxField name="ТаблицаТрудозатратИзменениеДоступно" id="280">
+									<DataPath>ТаблицаТрудозатрат.ИзменениеДоступно</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаТрудозатратИзменениеДоступноКонтекстноеМеню" id="281"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратИзменениеДоступноРасширеннаяПодсказка" id="282"/>
+								</CheckBoxField>
+								<CheckBoxField name="ТаблицаТрудозатратЕстьИзменение" id="283">
+									<DataPath>ТаблицаТрудозатрат.ЕстьИзменение</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаТрудозатратЕстьИзменениеКонтекстноеМеню" id="284"/>
+									<ExtendedTooltip name="ТаблицаТрудозатратЕстьИзменениеРасширеннаяПодсказка" id="285"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоЛокальныйДиспетчер</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Отбор_Изделие</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Отбор_СписокЗначений_ПодразделениеИсполнитель" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цех</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Отбор_СписокЗначений_Спецификация" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спецификация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.РесурсныеСпецификации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Обновить_ЭтапыПроизводстваПоИзделию" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить этапы производства по изделию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоЭтапыПроизводстваПоИзделию" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево этапов производства по изделию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Статус" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЭтаповПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодразделениеИсполнитель" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цех</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Спецификация" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РесурсныеСпецификации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоПредшествующих" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество предшествующих</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="УровеньИерархии" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаказНаПроизводство" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ на производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Дата" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИзделиеПолуфабрикат" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изделие (полуфабрикат)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОсновнойЭтапПроизводства" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Недодел" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Недодел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводство" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на производство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Отбор_СписокЗначений_ЗаказНаПроизводство" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на производство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Обновить_РедактированиеИспользованныхРесурсов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить таблицу редактирования использованных ресурсов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_Начата" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка этапа начата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_РедактируемыйЭтапПроизводства" id="11">
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_Запланировано" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>запланировано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_Недодел" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>недодел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_Рапределено" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоИспользованныхМатериалов" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево использованных материалов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковокТребуется" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковокФактически" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактически</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзменение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЕИ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИзменениеДоступно" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НоменклатураИсходная" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура (исходная)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСтроки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Упаковка" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковокВНаличии" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПроизводитсяВПроцессе" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковокВНаличииТекст" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии (текст)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>14</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковокНехватает" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество упаковок нехватает</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Назначение" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Назначения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_БылиИзменения" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка (были изменения)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдетОткрытиеФормы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идет открытие формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдетРасчетСписков" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идет расчет списков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводства" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конечный этап производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Отбор_СтатусыЭтаповПроизводства" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор статусы этапов производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:EnumRef.СтатусыЭтаповПроизводства2_2</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДеревоЭтапыПроизводстваПоИзделию_ОсновнойЭтапПроизводстваТекст" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>конечный этап производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоЭтапыПроизводстваПоИзделию_ЗаказНаПроизводствоТекст" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на производство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_РедактируемыйЭтапПроизводстваТекст" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конечный этап производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоЭтапыПроизводстваПоИзделиюДляОбработки" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево этапов производства по изделию (для обработки)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Статус" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЭтаповПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодразделениеИсполнитель" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цех</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Спецификация" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РесурсныеСпецификации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоПредшествующих" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество предшествующих</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="УровеньИерархии" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаказНаПроизводство" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ на производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Дата" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИзделиеПолуфабрикат" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изделие (полуфабрикат)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОсновнойЭтапПроизводства" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДоступныеОстаткиМатериалов" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступные остатки материалов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Склад" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Назначение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Назначения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоУпаковокВНаличии" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наличии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Упаковка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаТрудозатрат" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица трудозатрат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЭтапПроизводства" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этап производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидРабот" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид работ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыРаботСотрудников</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Плановое</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоФактически" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактически</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeId>4dc997d2-41dd-457e-a7fd-e8dfb622d065</v8:TypeId>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатьяКалькуляции" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья калькуляции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиКалькуляции</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НазначениеРабот" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение работ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИзменениеДоступно" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзменение" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЕИ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОбработкаЭтапа_БылиИзмененияТрудозатрат" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка (были изменения трудозатрат)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЭтапыПроизводстваПоИзделию</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.УровеньИерархии</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЭтаповПроизводства2_2.Завершен</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F5FFF5</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЭтапыПроизводстваПоИзделию</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.УровеньИерархии</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.Статус</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЭтаповПроизводства2_2.Формируется</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.Статус</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЭтаповПроизводства2_2.Сформирован</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.Статус</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЭтаповПроизводства2_2.КВыполнению</dcsset:right>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFF5E6</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЭтапыПроизводстваПоИзделию</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.УровеньИерархии</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЭтаповПроизводства2_2.Начат</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFFFE1</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЭтапыПроизводстваПоИзделию</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.УровеньИерархии</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЭтаповПроизводства2_2.Завершен</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F5F5F5</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЭтапыПроизводстваПоИзделию</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоЭтапыПроизводстваПоИзделию.ОсновнойЭтапПроизводства</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоИспользованныхМатериалов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.ЕстьИзменение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MediumGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоИспользованныхМатериалов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.ИзменениеДоступно</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F5F5F5</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличии</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.ПроизводитсяВПроцессе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.КоличествоУпаковокВНаличии</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F5FFF5</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличии</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.ПроизводитсяВПроцессе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.КоличествоУпаковокВНаличии</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F5FFFF</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#000080</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Arial" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоИспользованныхМатериаловКоличествоУпаковокВНаличии</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.ПроизводитсяВПроцессе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.КоличествоУпаковокНехватает</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:left xsi:type="dcscor:Field">ДеревоИспользованныхМатериалов.ЕстьИзменение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:СобытиеОтказ</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" kind="AutoFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаТрудозатрат</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаТрудозатрат.ЕстьИзменение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:MediumGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаТрудозатрат</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаТрудозатрат.ИзменениеДоступно</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#F5F5F5</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="НачатьРаботу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать работу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьРаботу</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОбновитьСписокЭтаповПроизводства" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список этапов производства</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписокЭтаповПроизводства</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОтменитьТекущуюРаботу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить текущую работу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьТекущуюРаботу</Action>
+		</Command>
+		<Command name="СформироватьТаблицуМатериалов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Материалы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать таблицу материалов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьтаблицуМатериалов</Action>
+		</Command>
+		<Command name="ИзменитьНоменклатуруМатериала" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить номенклатуру материала</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить номенклатуру материала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИзменитьНоменклатуруМатериала</Action>
+		</Command>
+		<Command name="ДобавитьИспользованныйМатериал" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить использованный материал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить использованный материал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьИспользованныйМатериал</Action>
+		</Command>
+		<Command name="УдалитьИспользованныйМатериал" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить (обнулить фактическое количество)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить использованный материал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИспользованныйМатериал</Action>
+		</Command>
+		<Command name="ПрименитьВДокументах" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить в документах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрименитьВДокументах</Action>
+		</Command>
+		<Command name="ВывестиСписок_ДеревоЭтапыПроизводстваПоИзделию" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести список (этапы производства)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести список (этапы производства)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OutputList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВывестиСписок_ДеревоЭтапыПроизводстваПоИзделию</Action>
+		</Command>
+		<Command name="ВывестиСписок_ДеревоИспользованныхМатериалов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести список (материалы)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести список (материалы)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OutputList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВывестиСписок_ДеревоИспользованныхМатериалов</Action>
+		</Command>
+		<Command name="СформироватьТаблицуТрудозатрат" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трудозатраты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать таблицу трудозатрат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьТаблицуТрудозатрат</Action>
+		</Command>
+		<Command name="ЗаполнитьИсполнителяТрудозатрат" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить исполнителя для всех строк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать бригаду и заполнить для всех строк трудозатрат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИсполнителяТрудозатрат</Action>
+		</Command>
+	</Commands>
+</Form>

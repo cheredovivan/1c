@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="b75f4f13-0daa-4868-b535-9cf5d38b2bef">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыПеремещенийТоваров" category="Ref">
+				<xr:TypeId>f75d1ca0-7d9c-4a92-9107-eeff2508fd69</xr:TypeId>
+				<xr:ValueId>783debff-5be9-436a-8313-9877dab647d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыПеремещенийТоваров" category="Manager">
+				<xr:TypeId>755f606c-380d-4923-80bc-c917749da4b1</xr:TypeId>
+				<xr:ValueId>b9a1f2b8-67cc-40a0-968c-369ce63f48fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыПеремещенийТоваров" category="List">
+				<xr:TypeId>cd780378-ca60-4fd5-90c6-0730f653fd0b</xr:TypeId>
+				<xr:ValueId>2b8d73fb-261c-4c47-8e36-e981815083e0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыПеремещенийТоваров</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

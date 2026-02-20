@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="319522b4-5a44-4ce7-a246-2a92eaa477ac">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияЗаказовНаПроизводствоВОчереди" category="Ref">
+				<xr:TypeId>cb3f32a8-cf2d-4514-86e4-2bfbb9b6489f</xr:TypeId>
+				<xr:ValueId>338c7a4c-0427-427b-96ec-4dcd6af4ff28</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияЗаказовНаПроизводствоВОчереди" category="Manager">
+				<xr:TypeId>f39f109f-0548-4318-98be-dcfca12f3be1</xr:TypeId>
+				<xr:ValueId>8c5a2f12-7279-4269-b317-46c6f9f61c25</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияЗаказовНаПроизводствоВОчереди" category="List">
+				<xr:TypeId>153cfebd-ad42-4321-a14a-ea71031a8b06</xr:TypeId>
+				<xr:ValueId>a5c51cbb-bd91-4571-84a9-7f210653fd8c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияЗаказовНаПроизводствоВОчереди</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

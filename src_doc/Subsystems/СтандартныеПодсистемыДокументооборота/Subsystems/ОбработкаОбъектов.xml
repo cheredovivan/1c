@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="06f5d428-d45c-4b4f-b674-101d7f3839b5">
+		<Properties>
+			<Name>ОбработкаОбъектов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка объектов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияСерверПовтИспНаВремяВызова</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияИсполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияОзнакомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияПодписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДействияУтверждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбработкиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.Действия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ПредметДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияОбработкиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияРезультатыВыполненияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДействияОбработкиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ФункцииУчастниковДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.РезультатыВыполненияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ДействияОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкиОбъектовВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ДействиеПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ДействиеПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияВыполненияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиДействийИсполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиДействийОзнакомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиДействийПодписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиДействийРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиДействийСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиДействийУтверждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.МоментыРазыменованияУчастниковДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПравилаОбработкиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаВспомогательныхДанныхДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаВспомогательныхОбщихНастроекДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаВыключенныхНастроекДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаВыключенныхОбщихНастроекДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаОбщихНастроекДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПравилаОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкиОбъектовСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ФайлыСКомментариямиWord</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПорядокВыполненияЭтапаДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиОбработкиВидовОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСогласованиеСЗамечаниями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСогласованиеСЗамечаниями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьВытеснениеУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВытеснениеУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ПредметДействияОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВидОбъектаСОбработкой</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВидОбъектаСОбработкойОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеНастроекОбработкиОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.НаправитьДействиеНовымУчастникам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФункцииУчастниковИсполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыДоступностиИзмененияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФункцииУчастниковПодписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФактическиеИсполнители</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидимостьДействийВПредметах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НаименованияЗадачУчастниковДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьОтложенноеНачалоВыполненияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОтложенноеНачалоВыполненияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОбУчастникахДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Замечания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВеткиОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭскалированныеДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ХодОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МаксимальныеНомераПравок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИтерацииДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИдентификаторыВложенийWord</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаОтложенногоНачалаВыполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиДействийВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиДействийКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСАлгоритмамиПроверки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиДействийКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЗапускДействийРегламентированнойОбработкиВнеОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВводРезультатаВыполненияДействияВнеПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиОтложенногоНачалаВыполненияДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияЗапускаДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УчастникиОзнакомлений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОзнакомлениеСОбъектом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыОбработкиПротоколаРазногласий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияОзнакомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыДобавившихВПротоколРазногласий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипОчередиПодготовкиКСогласованию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипСобытияХодаОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗамечаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаАвтоматическойПодготовкиДокументовКСогласованию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаОбработкаHTMLКСогласованию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальноеЧислоПопытокВыполненияЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальныйРазмерHTMLФайлаСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПоказыватьПротоколРазногласий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПроверятьСхемуПриПерезаполненииОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СпособСогласованияВРежимеЗамечаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкиОбъектовЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДействияСерверЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.КонтрольОбработокНаПаузе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОповещениеПриИнтерактивномАвтоЗапускеОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчастникиОзнакомленийЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФактическиеИсполнителиЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкиОбъектовКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкиОбъектовКлиентИнтеграция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиДоступностиДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПравилаОбработкиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПравилаОбработкиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПравилаОбработкиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСУчастниками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСУчастникамиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСУчастникамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСУчастникамиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭтапамиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭтапамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.УстановкаРезультатовДействиямОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОзнакомлениеСУЭП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВизыСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьОзнакомлениеСУЭП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьРезолюцииВДокументах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьРезолюцииВДокументах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыИсполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыОзнакомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыПодписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыРассмотрения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыУтверждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФункцииУчастниковОзнакомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФункцииУчастниковРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФункцииУчастниковСогласования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФункцииУчастниковУтверждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПрерываниеОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.АвторДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.НаименованиеЭтапа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.НастройкиДействий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыполнениеСтрокиДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.РедактированиеОсобогоНаименованияИОписанияЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаЗаменыУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПомещениеДействийВИсторию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыПодписанияПредметаДействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РазрезыПравилОбработкиДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗамокЗащищенныйУчастник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Замочек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗеленаяГалочка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияВзаимодействияСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияОтветственные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОтветственныйИсполнитель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПрерватьОбработку</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>КопированиеНастроекОбработки</Subsystem>
+			<Subsystem>СогласованиеВРежимеЗамечаний</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

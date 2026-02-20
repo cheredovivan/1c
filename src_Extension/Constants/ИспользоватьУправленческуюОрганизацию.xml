@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Constant uuid="8aaf66a7-9291-4c66-9901-6ec7b13f356e">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьУправленческуюОрганизацию" category="Manager">
+				<xr:TypeId>a1f0b67f-d32a-47fa-a249-a3b79aed643e</xr:TypeId>
+				<xr:ValueId>f2fa0812-5ac1-4079-95a6-05a3ec2e6e66</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьУправленческуюОрганизацию" category="ValueManager">
+				<xr:TypeId>3f23577c-de09-4c91-bab0-8ba861c99088</xr:TypeId>
+				<xr:ValueId>748199dd-8904-4538-b569-5b8f727c073c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьУправленческуюОрганизацию" category="ValueKey">
+				<xr:TypeId>6c6b35fd-90a2-54ba-8a2a-3bc37f731389</xr:TypeId>
+				<xr:ValueId>04cbbe4a-dbcd-5ece-812e-447fcdb2bb87</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьУправленческуюОрганизацию</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

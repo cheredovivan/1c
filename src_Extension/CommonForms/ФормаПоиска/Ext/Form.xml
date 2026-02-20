@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Поиск документов, файлов или отчетов</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Document, file, or report search</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<Enabled>false</Enabled>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="СостояниеПоиска" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние поиска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Search state</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ЦветФонаПредупреждения</BackColor>
+			<ExtendedTooltip name="СостояниеПоискаРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<PictureDecoration name="СостояниеПоискаПредупреждение" id="77">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние поиска предупреждение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Search state warning</v8:content>
+						</v8:item>
+					</Title>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="СостояниеПоискаПредупреждениеКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СостояниеПоискаПредупреждениеРасширеннаяПодсказка" id="79"/>
+				</PictureDecoration>
+				<LabelField name="СостояниеПоискаПредставление" id="80">
+					<TitleLocation>None</TitleLocation>
+					<VerticalAlign>Center</VerticalAlign>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СостояниеПоискаПредставлениеКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="СостояниеПоискаПредставлениеРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Шапка" id="42" DisplayImportance="VeryHigh">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Header</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="СтрокаПоиска" id="3">
+					<Visible>false</Visible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Введите искомый текст или часть фразы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Enter search text</v8:content>
+						</v8:item>
+					</ToolTip>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>40</MaxWidth>
+					<Wrap>false</Wrap>
+					<DropListButton>true</DropListButton>
+					<AvailableTypes>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</AvailableTypes>
+					<BorderColor>style:BorderColor</BorderColor>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Введите искомый текст или часть фразы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Enter search text</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="СтрокаПоискаExtendedTooltip" id="53"/>
+				</InputField>
+				<Button name="Найти" id="4">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<Representation>PictureAndText</Representation>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<Width>10</Width>
+					<Height>1</Height>
+					<CommandName>0</CommandName>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="НайтиExtendedTooltip" id="54"/>
+				</Button>
+				<Button name="Справка" id="44">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>0</CommandName>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="55"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ОбластьПоиска" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область поиска</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Search area</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбластьПоискаРасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<LabelField name="ОбластиПоискаПредставление" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Область поиска</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Search area</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ОбластиПоискаПредставлениеКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ОбластиПоискаПредставлениеРасширеннаяПодсказка" id="72"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИнформацияОНайденном" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о найденном</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Search result information</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнформацияОНайденномExtendedTooltip" id="56"/>
+			<ChildItems>
+				<CommandBar name="ГруппаНавигация" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Навигация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Navigation</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="ГруппаНавигацияExtendedTooltip" id="57"/>
+					<ChildItems>
+						<Button name="Предыдущие" id="8">
+							<Type>CommandBarButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>0</CommandName>
+							<BackColor>style:ButtonBackColor</BackColor>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ExtendedTooltip name="ПредыдущиеРасширеннаяПодсказка" id="58"/>
+						</Button>
+						<Button name="Следующие" id="9">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>0</CommandName>
+							<BackColor>style:ButtonBackColor</BackColor>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ExtendedTooltip name="СледующиеРасширеннаяПодсказка" id="59"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<LabelField name="ИнформацияОНайденномПредставление" id="16">
+					<TitleLocation>None</TitleLocation>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<ContextMenu name="ИнформацияОНайденномПредставлениеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ИнформацияОНайденномПредставлениеРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<HTMLDocumentField name="РезультатыПоиска" id="39" DisplayImportance="VeryHigh">
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="РезультатыПоискаКонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="РезультатыПоискаРасширеннаяПодсказка" id="61"/>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Поиск документов, файлов или отчетов</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Document, file, or report search</v8:content>
+			</v8:item>
+		</Title>
+		<AutoTitle>false</AutoTitle>
+		<Customizable>false</Customizable>
+		<CommandBarLocation>None</CommandBarLocation>
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="СостояниеПоиска" id="75">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Состояние поиска</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Search state</v8:content>
+					</v8:item>
+				</Title>
+				<HorizontalStretch>true</HorizontalStretch>
+				<Group>AlwaysHorizontal</Group>
+				<VerticalAlign>Center</VerticalAlign>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>style:ЦветФонаПредупреждения</BackColor>
+				<ExtendedTooltip name="СостояниеПоискаРасширеннаяПодсказка" id="76"/>
+				<ChildItems>
+					<PictureDecoration name="СостояниеПоискаПредупреждение" id="77">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Состояние поиска предупреждение</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Search state warning</v8:content>
+							</v8:item>
+						</Title>
+						<FileDragMode>AsFile</FileDragMode>
+						<ContextMenu name="СостояниеПоискаПредупреждениеКонтекстноеМеню" id="78"/>
+						<ExtendedTooltip name="СостояниеПоискаПредупреждениеРасширеннаяПодсказка" id="79"/>
+					</PictureDecoration>
+					<LabelField name="СостояниеПоискаПредставление" id="80">
+						<TitleLocation>None</TitleLocation>
+						<VerticalAlign>Center</VerticalAlign>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<ContextMenu name="СостояниеПоискаПредставлениеКонтекстноеМеню" id="81"/>
+						<ExtendedTooltip name="СостояниеПоискаПредставлениеРасширеннаяПодсказка" id="82"/>
+					</LabelField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="Шапка" id="42" DisplayImportance="VeryHigh">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Шапка</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Header</v8:content>
+					</v8:item>
+				</Title>
+				<Group>AlwaysHorizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="52"/>
+				<ChildItems>
+					<InputField name="СтрокаПоиска" id="3">
+						<TitleLocation>None</TitleLocation>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Введите искомый текст или часть фразы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Enter search text</v8:content>
+							</v8:item>
+						</ToolTip>
+						<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<MaxWidth>40</MaxWidth>
+						<Wrap>false</Wrap>
+						<DropListButton>true</DropListButton>
+						<AvailableTypes>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</AvailableTypes>
+						<BorderColor>style:BorderColor</BorderColor>
+						<InputHint>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Введите искомый текст или часть фразы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Enter search text</v8:content>
+							</v8:item>
+						</InputHint>
+						<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="СтрокаПоискаExtendedTooltip" id="53"/>
+					</InputField>
+					<Button name="Найти" id="4">
+						<Type>UsualButton</Type>
+						<Representation>PictureAndText</Representation>
+						<DefaultButton>true</DefaultButton>
+						<SkipOnInput>false</SkipOnInput>
+						<Width>10</Width>
+						<Height>1</Height>
+						<CommandName>0</CommandName>
+						<BackColor>style:ButtonBackColor</BackColor>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ExtendedTooltip name="НайтиExtendedTooltip" id="54"/>
+					</Button>
+					<Button name="Справка" id="44">
+						<Type>UsualButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>0</CommandName>
+						<TextColor>style:ButtonTextColor</TextColor>
+						<BackColor>style:ButtonBackColor</BackColor>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ExtendedTooltip name="СправкаExtendedTooltip" id="55"/>
+					</Button>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ОбластьПоиска" id="73">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Область поиска</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Search area</v8:content>
+					</v8:item>
+				</Title>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ОбластьПоискаРасширеннаяПодсказка" id="74"/>
+				<ChildItems>
+					<LabelField name="ОбластиПоискаПредставление" id="70">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Область поиска</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Search area</v8:content>
+							</v8:item>
+						</Title>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Hiperlink>true</Hiperlink>
+						<ContextMenu name="ОбластиПоискаПредставлениеКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ОбластиПоискаПредставлениеРасширеннаяПодсказка" id="72"/>
+					</LabelField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаИнформацияОНайденном" id="31">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Информация о найденном</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Search result information</v8:content>
+					</v8:item>
+				</Title>
+				<HorizontalStretch>true</HorizontalStretch>
+				<Group>AlwaysHorizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаИнформацияОНайденномExtendedTooltip" id="56"/>
+				<ChildItems>
+					<CommandBar name="ГруппаНавигация" id="51">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Навигация</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Navigation</v8:content>
+							</v8:item>
+						</Title>
+						<HorizontalStretch>false</HorizontalStretch>
+						<ExtendedTooltip name="ГруппаНавигацияExtendedTooltip" id="57"/>
+						<ChildItems>
+							<Button name="Предыдущие" id="8">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>0</CommandName>
+								<BackColor>style:ButtonBackColor</BackColor>
+								<BorderColor>style:BorderColor</BorderColor>
+								<ExtendedTooltip name="ПредыдущиеРасширеннаяПодсказка" id="58"/>
+							</Button>
+							<Button name="Следующие" id="9">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>0</CommandName>
+								<BackColor>style:ButtonBackColor</BackColor>
+								<BorderColor>style:BorderColor</BorderColor>
+								<ExtendedTooltip name="СледующиеРасширеннаяПодсказка" id="59"/>
+							</Button>
+						</ChildItems>
+					</CommandBar>
+					<LabelField name="ИнформацияОНайденномПредставление" id="16">
+						<TitleLocation>None</TitleLocation>
+						<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+						<TextColor>style:ПоясняющийТекст</TextColor>
+						<ContextMenu name="ИнформацияОНайденномПредставлениеКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="ИнформацияОНайденномПредставлениеРасширеннаяПодсказка" id="60"/>
+					</LabelField>
+				</ChildItems>
+			</UsualGroup>
+			<HTMLDocumentField name="РезультатыПоиска" id="39" DisplayImportance="VeryHigh">
+				<TitleLocation>None</TitleLocation>
+				<ContextMenu name="РезультатыПоискаКонтекстноеМеню" id="40"/>
+				<ExtendedTooltip name="РезультатыПоискаРасширеннаяПодсказка" id="61"/>
+			</HTMLDocumentField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

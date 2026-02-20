@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Constant uuid="3500d657-fa46-40b9-a16f-a5b6286eb647">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьПеремещениеПоНесколькимЗаказам" category="Manager">
+				<xr:TypeId>9f05aa58-d45b-4194-acb6-9827d4d4c613</xr:TypeId>
+				<xr:ValueId>2efbb94b-a183-4a09-a980-0060cc3c16b8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьПеремещениеПоНесколькимЗаказам" category="ValueManager">
+				<xr:TypeId>d45e3059-04c0-451d-8629-fd3648b8c58c</xr:TypeId>
+				<xr:ValueId>42d511f3-442f-47df-9805-8d7ca3518318</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьПеремещениеПоНесколькимЗаказам" category="ValueKey">
+				<xr:TypeId>5b83db31-de95-530c-af1b-4030edacad4d</xr:TypeId>
+				<xr:ValueId>67126b36-f22d-5ac2-bf43-177027e38922</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьПеремещениеПоНесколькимЗаказам</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

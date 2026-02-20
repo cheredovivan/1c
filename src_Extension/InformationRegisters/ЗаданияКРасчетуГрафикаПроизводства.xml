@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="e13c5ec5-e464-4b7f-85f1-d1c02cab2071">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗаданияКРасчетуГрафикаПроизводства" category="Record">
+				<xr:TypeId>16e40e3d-a9a0-415a-8fae-9b27e7cd2974</xr:TypeId>
+				<xr:ValueId>c84ab48d-8365-4bf5-bdb2-7d12e01ba882</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ЗаданияКРасчетуГрафикаПроизводства" category="Manager">
+				<xr:TypeId>d5024a3e-42ee-4f09-9eaa-a88f56555742</xr:TypeId>
+				<xr:ValueId>2a58eca8-58bb-4340-952f-d91ebc395bb4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗаданияКРасчетуГрафикаПроизводства" category="Selection">
+				<xr:TypeId>69a8c84e-02f6-4ad9-be5e-c3489c62af18</xr:TypeId>
+				<xr:ValueId>ae2a6f64-c928-4f9a-b345-c6908fb309fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ЗаданияКРасчетуГрафикаПроизводства" category="List">
+				<xr:TypeId>6a212d49-55e9-4a41-9d51-d614408f8f46</xr:TypeId>
+				<xr:ValueId>eac15c99-5386-4fd4-8d71-955c28af47c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаданияКРасчетуГрафикаПроизводства" category="RecordSet">
+				<xr:TypeId>d67011f2-d0ec-4c74-a3d8-f460df47b0d6</xr:TypeId>
+				<xr:ValueId>70d55fde-fd50-4ef8-8390-40a935e34e1a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаданияКРасчетуГрафикаПроизводства" category="RecordKey">
+				<xr:TypeId>dca5c296-d09d-4bc7-909a-51d0743f39a7</xr:TypeId>
+				<xr:ValueId>6cd233f1-0c72-49c6-8323-efec8afe89e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаданияКРасчетуГрафикаПроизводства" category="RecordManager">
+				<xr:TypeId>9c2ab927-34b9-4093-8de8-cea96c0f2f16</xr:TypeId>
+				<xr:ValueId>9c2f009b-f2b1-4ea7-b454-c7a78de79b68</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаданияКРасчетуГрафикаПроизводства</Name>
+			<Comment/>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="2aa4c59f-27c7-4bfe-9a72-828d369803e6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Распоряжение</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

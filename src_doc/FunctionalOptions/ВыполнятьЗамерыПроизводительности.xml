@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<FunctionalOption uuid="76f6bae8-5052-49ba-bbc1-68b42e278f03">
+		<Properties>
+			<Name>ВыполнятьЗамерыПроизводительности</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнять замеры производительности</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.ВыполнятьЗамерыПроизводительности</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>Report.ЗамерыПроизводительности</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени</xr:Object>
+				<xr:Object>Catalog.КлючевыеОперации</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремениТехнологические</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыКомментарииСтатистики</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыОбластиСтатистики</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыОперацииСтатистики</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыСтатистики</xr:Object>
+				<xr:Object>Report.ОценкаПроизводительности</xr:Object>
+				<xr:Object>DataProcessor.ВремяВыполненияКлючевыхОпераций</xr:Object>
+				<xr:Object>Catalog.ПрофилиКлючевыхОпераций</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Command.НастройкиОценкиПроизводительности</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Command.ЭкспортЗамеровПроизводительности</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Command.ИмпортЗамеровПроизводительности</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Command.ПодборЦелевогоВремени</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.TabularSection.Производительность</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.TabularSection.Производительность.Attribute.КлючеваяОперация</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.TabularSection.Производительность.Attribute.ЦелевоеВремя</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.TabularSection.Производительность.Attribute.Приоритет</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.ДатаНачала</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.ДатаОкончания</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.Диаграмма</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.Шаг</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.ОбщаяПроизводительностьСистемы</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.Комментарий</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.ВариантФильтраКомментарий</xr:Object>
+				<xr:Object>DataProcessor.ОценкаПроизводительности.Attribute.ВыполнятьЗамерыПроизводительности</xr:Object>
+				<xr:Object>DataProcessor.ВремяВыполненияКлючевыхОпераций.Command.ВремяВыполненияКлючевыхОпераций</xr:Object>
+				<xr:Object>Catalog.ПрофилиКлючевыхОпераций.TabularSection.КлючевыеОперацииПрофиля</xr:Object>
+				<xr:Object>Catalog.ПрофилиКлючевыхОпераций.TabularSection.КлючевыеОперацииПрофиля.Attribute.КлючеваяОперация</xr:Object>
+				<xr:Object>Catalog.ПрофилиКлючевыхОпераций.TabularSection.КлючевыеОперацииПрофиля.Attribute.ЦелевоеВремя</xr:Object>
+				<xr:Object>Catalog.ПрофилиКлючевыхОпераций.TabularSection.КлючевыеОперацииПрофиля.Attribute.Приоритет</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Dimension.КлючеваяОперация</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Dimension.ДатаНачалаЗамера</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Dimension.НомерСеанса</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Dimension.ДатаЗаписиНачалоЧаса</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Resource.ВремяВыполнения</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Resource.ВесЗамера</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Resource.Комментарий</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Attribute.ДатаЗаписи</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Attribute.ДатаОкончания</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Attribute.Пользователь</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Attribute.ДатаЗаписиЛокальная</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени.Attribute.ВыполненСОшибкой</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

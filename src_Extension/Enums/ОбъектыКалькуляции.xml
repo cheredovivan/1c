@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="75fa1d39-89a3-478e-917d-776f0af6e322">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ОбъектыКалькуляции" category="Ref">
+				<xr:TypeId>1d61db6c-b878-4398-af58-a2ed6a9677dd</xr:TypeId>
+				<xr:ValueId>a725dced-b390-499b-9297-8fbb896ba3f2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ОбъектыКалькуляции" category="Manager">
+				<xr:TypeId>5d50426d-9962-49e0-a7b8-c050e3c49c6c</xr:TypeId>
+				<xr:ValueId>567d1925-499f-46fe-b4c4-cbc7fbc3e224</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ОбъектыКалькуляции" category="List">
+				<xr:TypeId>62892418-4476-49d5-b131-65d9c37ed698</xr:TypeId>
+				<xr:ValueId>88e7b012-1378-4896-b634-e0c5689912e8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОбъектыКалькуляции</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>0915c415-38da-4d4d-9708-e46275679de4</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="14b1e99a-fae2-48d9-b51b-4093ab11c0a0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РесурснаяСпецификация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c58298d5-c6c9-4ffc-bf41-8abb3bba61b1</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e6053258-ccdc-419c-a63a-0d1cc26764ca">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЗаказНаПроизводство</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d29d8eba-3313-42a6-bd95-5bc71b55bc92</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

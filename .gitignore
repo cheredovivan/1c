@@ -1,0 +1,11 @@
+_private/
+*.exe
+*.msi
+*.jar
+logs/
+data/
+nul
+nul-
+.claude/settings.local.json
+.claude/worktrees/
+.mcp.json

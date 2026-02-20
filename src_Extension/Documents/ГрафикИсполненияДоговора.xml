@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="41ffdd45-129a-4368-a913-57a4b30dbea0">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ГрафикИсполненияДоговора" category="Object">
+				<xr:TypeId>fbc7ca01-2146-48fa-992c-03fac496fb22</xr:TypeId>
+				<xr:ValueId>bea31903-8c8a-4a4a-ae17-df8c6a8a612d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ГрафикИсполненияДоговора" category="Ref">
+				<xr:TypeId>4690dcff-9b03-40d5-99be-60c64c34e7fe</xr:TypeId>
+				<xr:ValueId>39217b2e-af52-4bb1-bdee-6077fd802904</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ГрафикИсполненияДоговора" category="Selection">
+				<xr:TypeId>b1ca03b1-56c2-4925-9d3e-91198e7c8aea</xr:TypeId>
+				<xr:ValueId>53ce1674-f5db-47ad-a5e3-4917271669d6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ГрафикИсполненияДоговора" category="List">
+				<xr:TypeId>b4ae33b3-3540-4f5e-8299-d0fc2e2d7bba</xr:TypeId>
+				<xr:ValueId>9dfe9121-0d48-4206-9c4a-51aac92db449</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ГрафикИсполненияДоговора" category="Manager">
+				<xr:TypeId>1be7009e-1469-4c0b-b0e6-fd76be2ef8df</xr:TypeId>
+				<xr:ValueId>22b48466-e933-4e5f-88ef-0a4f053029c7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГрафикИсполненияДоговора</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

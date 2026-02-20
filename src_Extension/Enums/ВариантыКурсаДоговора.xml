@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="dc49aa75-dcc6-4bdf-8120-daf3782df899">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВариантыКурсаДоговора" category="Ref">
+				<xr:TypeId>f1c5836d-6398-4b8a-972a-4ffd9adfdd8d</xr:TypeId>
+				<xr:ValueId>2ed54a50-d908-4ad9-bc14-e433470cbdfb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВариантыКурсаДоговора" category="Manager">
+				<xr:TypeId>dc075464-164a-4b4c-bdcd-d1bb49d406b6</xr:TypeId>
+				<xr:ValueId>cf3f9e43-6148-4940-be25-5046c9c6469c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВариантыКурсаДоговора" category="List">
+				<xr:TypeId>416c44bc-6b22-4239-8877-a30361e7f8fc</xr:TypeId>
+				<xr:ValueId>af6165d3-2448-4918-8ee4-3637fa561256</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВариантыКурсаДоговора</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>ce15c568-c6b7-4456-ade6-b3c7e1e00080</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка искусственного интеллекта</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ОсновнаяКоманднаяПанель" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Button name="СохранитьНастройки" id="1">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.СохранитьНастройки</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="Отмена" id="5">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Cancel</CommandName>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="6"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="ГруппаРаспознаваниеТекста" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распознавание текста</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРаспознаваниеТекстаРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьРаспознаваниеТекста" id="9">
+					<DataPath>НаборКонстант.ИспользоватьРаспознавание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распознавание текста</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Позволяет преобразовывать фото и сканы документов в текст.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьРаспознаваниеТекстаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ИспользоватьРаспознаваниеТекстаРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьРаспознаваниеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаПрограммыРаспознавания" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программы распознавания</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>DontUse</ThroughAlign>
+					<ExtendedTooltip name="ГруппаПрограммыРаспознаванияРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОтступ" id="14">
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="16"/>
+						</LabelDecoration>
+						<InputField name="ПрограммаРаспознавания" id="17">
+							<DataPath>НаборКонстант.ПрограммаРаспознавания</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>способ</v8:content>
+								</v8:item>
+							</Title>
+							<Width>26</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ClearButton>false</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<TextEdit>false</TextEdit>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1С:Распознавание первичных документов</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ПрограммыРаспознавания.EnumValue.СервисРаспознавания</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>CuneiForm</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ПрограммыРаспознавания.EnumValue.CuneiForm</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПрограммаРаспознаванияКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ПрограммаРаспознаванияРасширеннаяПодсказка" id="19"/>
+							<Events>
+								<Event name="OnChange">ПрограммаРаспознаванияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="НастройкиРаспознаванияТекста" id="27">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкиРаспознаванияТекста</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настроить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НастройкиРаспознаванияТекстаРасширеннаяПодсказка" id="28"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗаполнениеКарточек" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение карточек</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаполнениеКарточекРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточек" id="35">
+					<DataPath>НаборКонстант.ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточек</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение реквизитов карточек документов (тестовый режим)</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Позволяет распознавать реквизитный состав фото и сканов для последующего создания и заполнения карточек документов.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточекКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточекРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьСервисРаспознаванияДокументовДляЗаполненияКарточекПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Button name="НастройкиЗаполненияКарточекДокументов" id="41">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.НастройкиЗаполненияКарточекДокументов</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ExtendedTooltip name="НастройкиЗаполненияКарточекДокументовРасширеннаяПодсказка" id="42">
+						<HorizontalAlign>Auto</HorizontalAlign>
+					</ExtendedTooltip>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТаймлист" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймлист</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТаймлистРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользуетсяРаспознаваниеТаймлист" id="115">
+					<DataPath>НаборКонстант.ИспользуетсяРаспознаваниеТаймлист</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервис распознавания аудио- и видеофайлов Таймлист</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервис предназначен для преобразования аудио- и видеофайлов в расшифровку и автопротокол.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользуетсяРаспознаваниеТаймлистКонтекстноеМеню" id="116"/>
+					<ExtendedTooltip name="ИспользуетсяРаспознаваниеТаймлистРасширеннаяПодсказка" id="117"/>
+					<Events>
+						<Event name="OnChange">ИспользуетсяРаспознаваниеТаймлистПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Button name="НастройкиСервисаТаймлист" id="56">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.НастройкиСервисаТаймлист</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<ExtendedTooltip name="НастройкиСервисаТаймлистРасширеннаяПодсказка" id="57">
+						<HorizontalAlign>Auto</HorizontalAlign>
+					</ExtendedTooltip>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРаспознаваниеРечи" id="76">
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Локализация">true</xr:Value>
+			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распознавание речи</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРаспознаваниеРечиРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияРаспознаваниеРечи" id="80">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распознавание речи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потоковое распознавание с помощью технологии "1С:Распознавание речи" для диктовки текста электронных писем, задач, отчетов и резолюций, голосовой подбор адресатов писем.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ДекорацияРаспознаваниеРечиКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДекорацияРаспознаваниеРечиРасширеннаяПодсказка" id="82"/>
+				</LabelDecoration>
+				<Button name="НастройкиРаботыСРечью" id="78">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.НастройкиРаботыСРечью</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НастройкиРаботыСРечьюРасширеннаяПодсказка" id="79"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВключеноИспользованиеРаспознаванияCuneiForm" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройки</Action>
+		</Command>
+		<Command name="НастройкиРаспознаванияТекста" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к настройкам сервиса распознавания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиРаспознаванияТекста</Action>
+		</Command>
+		<Command name="НастройкиЗаполненияКарточекДокументов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НастройкиЗаполненияКарточекДокументов</Action>
+		</Command>
+		<Command name="НастройкиСервисаТаймлист" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки сервиса 1С:Таймлист</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиСервисаТаймлист</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастройкиРаботыСРечью" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Локализация">true</xr:Value>
+			</Use>
+			<Action>НастройкиРаботыСРечью</Action>
+		</Command>
+	</Commands>
+</Form>
